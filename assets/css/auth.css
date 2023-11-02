@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --primary-color: #374151;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FFF;
+}
+
+.login-page {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-login {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    /* border: 1px solid red; */
+    padding: 0px 40px 0px 40px;
+}
+
+form h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+form h1 b {
+    color: var(--primary-color);
+}
+
+form p {
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+input {
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 50px;
+    outline: none;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 15px;
+}
+
+.button-login {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    font-weight: 900;
+    font-size: 17px;
+}
+
+@media (min-width: 768px) {
+
+    .login-photo {
+        background: url('../image/login.jpg') no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+    }
+}
+
+@media (min-width:1024px) {
+    .form-login {
+        width: 60%;
+    }
+}

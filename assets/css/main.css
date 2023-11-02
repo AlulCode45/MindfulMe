@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --primary-color: #374151;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FFF;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 40px;
+    padding-right: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: #374151;
+    background-color: #ffffff;
+
+}
+
+.navbar-icon {
+    width: 200px;
+}
+
+#menu-button {
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+
+.hidden {
+    display: none;
+}
+
+#menu {
+    width: 100%;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 35px;
+}
+
+.menu-item {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 18px;
+}
+
+.login-button {
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    padding: 10px 30px 10px 30px;
+    border-radius: 100px;
+}
+
+.hero {
+    margin-top: 20px;
+    display: flex;
+    gap: 70px;
+    align-items: center;
+}
+
+.hero .hero-content .top-content {
+    display: none;
+}
+
+.hero .hero-content .top-content hr {
+    width: 70% !important;
+    height: 1px;
+    background-color: black;
+}
+
+.welcome-text {
+    font-size: 40px;
+    /* line-height: 75px; */
+    font-weight: normal;
+}
+
+.header-description {
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.header-button {
+    margin-top: 30px;
+}
+
+.hero-image {
+    display: none;
+}
+
+.mulai-konsultasi {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+    border-radius: 9999px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: var(--primary-color);
+}
+
+.button-telusuri {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+    border-radius: 9999px;
+    border-width: 1px;
+    font-size: 15px;
+    font-weight: 600;
+
+}
+
+.rating-aplikasi {
+    margin-top: 20px;
+    background-color: #f1f1f1;
+    padding: 15px 20px 15px 20px;
+    border-radius: 10px;
+}
+
+#tentang {
+    padding: 0px 40px 0px 40px;
+    margin-top: 80px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#tentang h2 {
+    margin-bottom: 30px;
+}
+
+.tentang-konten {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 20px
+}
+
+.overlay-layer {
+    width: 100%;
+    height: 100%;
+    color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay-layer:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: ease-in;
+}
+
+.overlay-layer h3 {
+    font-weight: bold;
+    margin-bottom: 13px;
+    font-size: 24px;
+}
+
+.card-tentang-1 {
+    background-color: white;
+    background: url('../image/tentang1.png') no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    height: 350px;
+}
+
+.card-tentang-1:hover {
+    transform: scale(1.01);
+    transition: ease-in;
+}
+
+.card-tentang-2 {
+    background-color: white;
+    background: url('../image/tentang2.png') no-repeat;
+    background-size: cover;
+    height: 350px;
+}
+
+.card-tentang-2:hover {
+    transform: scale(1.01);
+    transition: ease-in;
+}
+
+.card-tentang-3 {
+    background-color: white;
+    background: url('../image/tentang3.png') no-repeat;
+    background-size: cover;
+    height: 350px;
+}
+
+.card-tentang-3:hover {
+    transform: scale(1.01);
+    transition: ease-in;
+}
+
+#quotes {
+    background: url('../image/bg-quote.png') no-repeat;
+    width: 100%;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.quotes-konten {
+    width: 75%;
+}
+
+#quotes blockquote {
+    font-size: 25px;
+    width: 100%;
+    display: block;
+}
+
+#quotes b {
+    display: block;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#cari-psikolog {
+    padding: 0px 40px 0px 40px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+}
+
+#cari-psikolog img {
+    width: 100%;
+}
+
+
+#cari-psikolog .konten h2 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#cari-psikolog .konten .temukan-psikolog {
+    margin-top: 15px;
+    border-radius: 15px;
+    background: #F1F1F1;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#cari-psikolog .konten .temukan-psikolog span {
+    padding-left: 30px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#cari-psikolog .konten .temukan-psikolog img {
+    padding-right: 30px;
+    width: 40px;
+}
+
+#cari-psikolog .konten p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 20px;
+}
+
+footer {
+    padding: 0px 40px 0px 40px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-top: 2rem;
+    background-color: #F1F1F1;
+}
+
+.footer-konten {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+.alamat {
+    margin-top: 1rem;
+    max-width: 20rem;
+    color: #6B7280;
+}
+
+.medsos {
+    display: flex;
+    margin-top: 2rem;
+    gap: 1.5rem;
+}
+
+.link-footer {
+    color: #374151;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+}
+
+.icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.footer-list {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+.footer-list p {
+    font-weight: 500;
+    color: #111827;
+}
+
+.footer-list-link {
+    margin-top: 1.5rem;
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.icon-desc {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+
+@media (min-width: 640px) {
+    footer {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .footer-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+@media (min-width: 1024px) {
+    footer {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-top: 4rem;
+    }
+
+    .footer-konten {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .footer-list {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-column: span 2 / span 2;
+    }
+
+    .hero-image {
+        display: block;
+    }
+
+    .top-content {
+        display: flex !important;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .hero {
+        padding: 0px 40px 0px 40px;
+    }
+
+    .hero-content {
+        text-align: start;
+    }
+
+    .welcome-text {
+        font-size: 70px;
+    }
+
+    .header-description {
+        width: 75%;
+    }
+
+    #quotes blockquote {
+        font-size: 40px;
+    }
+
+    #quotes p {
+        font-size: 35px;
+    }
+
+    #menu {
+        display: flex;
+        align-items: center;
+        width: auto;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    .menu-items {
+        flex-direction: row;
+    }
+
+    #cari-psikolog {
+        flex-wrap: nowrap;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .mulai-konsultasi {
+        border-radius: 0;
+        border-top-right-radius: 9999px;
+        border-bottom-right-radius: 9999px;
+    }
+
+    .tentang-konten {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .card-tentang-1,
+    .card-tentang-2,
+    .card-tentang-3 {
+        height: 458px;
+    }
+
+    .hero {
+        padding: 0px 40px 0px 40px;
+    }
+
+    .welcome-text {
+        font-size: 50px;
+    }
+}
+
+.footer-konten small {
+    display: block;
+    margin-top: 20px !important;
+}

@@ -1,0 +1,1574 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --primary-color: #374151;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #EFEFEF;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px 15px 20px;
+    background: #ffff;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
+}
+
+.nav-icon {
+    width: 60%;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile span {
+    display: none;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+
+.banners {
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+}
+
+.row-artikel {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+    margin-bottom: 120px;
+}
+
+.text-artikel {
+    font-size: 20px;
+    margin-top: 18px;
+    font-weight: 600;
+}
+
+.card-header {
+    width: 100%;
+    border-radius: 20px;
+    height: 200px;
+}
+
+.card:hover {
+    transform: scale(1.06);
+    transition: 80ms ease-in;
+}
+
+.card-title {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.date {
+    display: block;
+    margin-top: 10px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.bottom-navigation {
+    box-sizing: border-box;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #374151;
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.bottom-navigation svg {
+    width: 40px;
+    height: 40px;
+}
+
+.bottom-navigation svg:hover {
+    transform: scale(1.3);
+    margin-top: -15px;
+    transition: 80ms ease-in;
+}
+
+.menu-dekstop {
+    display: none;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: 0.5s;
+    width: 100%;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+}
+
+.cari-artikel {
+    margin-top: 6px;
+}
+
+.cari-artikel input {
+    box-sizing: border-box;
+    padding: 15px 10px 15px 10px;
+    border: none;
+    width: 100%;
+    outline: none;
+    border-radius: 7px;
+    font-size: 17px;
+}
+
+.sidebar {
+    display: none;
+}
+
+.pencarian-psikolog input {
+    height: 40px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.pencarian-psikolog .filter-psikolog {
+    right: 0;
+}
+
+.pencarian-psikolog svg {
+    position: absolute;
+    width: 30px;
+}
+
+.pencarian-psikolog input {
+    width: 100%;
+}
+
+.consultation {
+    margin-bottom: 150px;
+}
+
+.pencarian-psikolog {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.psikolog-list {
+    box-sizing: border-box;
+    padding: 30px 20px 30px 20px;
+    height: 100vh;
+    background: white;
+    height: 100%;
+}
+
+.psikolog-card {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.psikolog-card:hover {
+    background-color: #f1f1f1;
+}
+
+.psikolog-card img {
+    width: 64.72px;
+}
+
+.psikolog-name {
+    font-weight: bold;
+}
+
+.psikolog-desc {
+    font-size: 14px;
+}
+
+.psikolog-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.psikolog-rating {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.psikolog-rating svg {
+    width: 20px;
+}
+
+.psikolog-akun-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.psikolog-akun-info span {
+    display: block;
+    background: rgba(0, 255, 56, 0.19);
+    padding: 8px 20px 8px 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.psikolog-akun-info div {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    gap: 5px;
+}
+
+.psikolog-akun-info div img {
+    width: 25px;
+    height: 25px;
+}
+
+.visible {
+    display: block !important;
+}
+
+.chat-psikolog {
+    display: none;
+    background-color: white;
+    padding-bottom: 20px;
+}
+
+.profile-psikolog {
+    display: flex;
+    gap: 30px;
+}
+
+.profile-psikolog img {
+    width: 80px;
+    border-radius: 5px;
+}
+
+.profile-psikolog {
+    background-color: white;
+    padding: 15px 20px 15px 20px;
+}
+
+.profile-psikolog .nama-psikolog b {
+    font-size: 17px;
+}
+
+.profile-psikolog .nama-psikolog p {
+    /* width: 70%; */
+    margin-top: 10px;
+}
+
+.menu-chat {
+    color: #374151;
+    width: 20px;
+    height: 20px !important;
+    border-radius: 100%;
+    border: 4px solid #37415134;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-chat b {
+    font-weight: bolder;
+    font-size: 30px;
+    line-height: 0px;
+    padding: 0;
+    margin: 0;
+}
+
+.aksi-chat {
+    margin-top: 10px;
+    display: flex;
+    background-color: #F6FAFD;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.aksi-chat-button {
+    display: flex;
+    gap: 25px;
+}
+
+.aksi-chat-button button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.main-chat {
+    margin-top: 30px;
+    position: relative;
+}
+
+.chat-list {
+    overflow-y: auto;
+    height: 350px;
+}
+
+.pesan-dikirim {
+    display: flex;
+    justify-content: end;
+}
+
+.pesan-dikirim p {
+    color: white;
+    width: 50%;
+    background-color: #374151;
+    padding: 30px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.pesan-diterima {
+    margin-top: 20px;
+    background-color: #EFEFEF;
+    color: white;
+    padding: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 50%;
+    right: 0;
+    color: black;
+}
+
+.kirim-pesan {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.kirim-pesan input {
+    width: 100%;
+    height: 50px;
+    outline: none;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.kirim-pesan button {
+    border-radius: 100%;
+    background-color: #374151;
+    padding: 10px;
+}
+
+.kirim-pesan button svg {
+    width: 20px;
+    height: 20px;
+}
+
+.tes-kesehatan {
+    margin-top: 20px;
+    margin-bottom: 100px;
+    background-color: white;
+}
+
+.tes-kesehatan img {
+    width: 100%;
+}
+
+.tes-kesehatan h1 {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.tes-kesehatan p {
+    padding: 30px;
+    color: #000;
+    text-align: center;
+    /* font-family: Montserrat; */
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.mulai-tes {
+    width: 303px;
+    height: 55px;
+    border-radius: 50px;
+    background: #1C7892;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.panduan-tes {
+    color: #1C7892;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 50px;
+    border: 5px solid #1C7892;
+    margin-top: 10px;
+
+    width: 303px;
+    height: 55px;
+    margin-bottom: 20px;
+}
+
+.tes-kesehatan .button-aksi {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.tes-kesehatan .button-aksi button {
+    display: block;
+}
+
+.jawaban {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.jawaban button {
+    width: 100%;
+    height: 65.28px;
+    background: #1C7892;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    border-radius: 10px;
+}
+
+.soal-action {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.soal-action button {
+    width: 30px;
+    background-color: #374151;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.soal-action img {
+    width: 100px;
+}
+
+.laporan-kesehatan {
+    background-color: white;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.laporan-kesehatan p {
+    margin-top: 10px;
+}
+
+.laporan-kesehatan table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.laporan-kesehatan table,
+.laporan-kesehatan th,
+.laporan-kesehatan td {
+    border: 1px solid black;
+}
+
+.laporan-kesehatan th,
+.laporan-kesehatan td {
+    padding: 8px;
+    text-align: center;
+    /* Mengatur teks di tengah */
+}
+
+.laporan-kesehatan th {
+    background-color: #f2f2f2;
+}
+
+.laporan-kesehatan tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.download-button {
+    margin-top: 10px;
+    display: flex;
+    justify-content: end;
+}
+
+.download-button button {
+    background-color: #1C7892;
+    border-radius: 10px;
+    padding: 15px;
+    color: white;
+    width: 150px;
+
+    color: #FFF;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.topik-creator {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.topik-creator img {
+    border-radius: 100%;
+}
+
+span .category {
+    width: 72px;
+    height: 27px;
+    color: #FFF;
+
+}
+
+.forum {
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+.list-topik {
+    width: 100%;
+}
+
+.topik {
+    padding: 20px 30px 20px 30px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.stress {
+    background-color: #FF3A3A;
+    padding: 5px;
+    color: white;
+    font-weight: 500;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: bolder;
+    line-height: normal;
+}
+
+.curhat {
+    background-color: #E6CD49;
+    padding: 5px;
+    color: white;
+    font-weight: 500;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: bolder;
+    line-height: normal;
+}
+
+.judul-topik h1 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.isi-topik p {
+    font-size: 18px;
+    margin-top: 7px;
+}
+
+.tambah-topik {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+}
+
+.tambah-topik button {
+    border-radius: 30px;
+    background-color: #374151;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    font-size: 17px;
+}
+
+.tambah-topik button b {
+    display: none;
+}
+
+.forum-header {
+    display: flex;
+    padding: 20px 20px 0px 20px;
+    gap: 10px;
+}
+
+.forum-header img {
+    display: none;
+}
+
+.forum-header input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    padding: 5px 15px 5px 15px;
+}
+
+.daftar-topik-kategori {
+    display: none;
+}
+
+main {
+    width: 100%;
+}
+
+.footer-topik {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-topik span {
+    display: block;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+.topik-action,
+.topik-action span {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* CSS untuk mengatur modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    z-index: 9999;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.modal-content form {
+    overflow-y: auto;
+    height: 300px;
+}
+
+.modal-content .form-group label {
+    display: block;
+}
+
+.modal-content .form-group input,
+.modal-content .form-group input::-webkit-input-placeholder,
+.modal-content .form-group textarea ::-webkit-input-placeholder {
+    height: 50px;
+    font-size: 15px;
+}
+
+.modal-content .form-group input,
+.modal-content .form-group textarea,
+.modal-content .form-group select {
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    outline: none;
+    border: none;
+    background-color: #F1F1F1;
+    font-size: 15px;
+}
+
+select option {
+    color: #333;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+select option:checked {
+    background-color: #374151 !important;
+    color: #fff;
+}
+
+.open-modal-button {
+    cursor: pointer;
+}
+
+.modal-content .close-modal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-content .close-modal b {
+    font-size: 25px;
+}
+
+.modal-content .close {
+    margin-bottom: 20px;
+}
+
+.close:hover {
+    cursor: pointer;
+}
+
+.modal-content form {
+    margin-top: 20px;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: end;
+}
+
+.modal-footer button {
+    margin-top: 20px;
+    background-color: #2E4450;
+    color: #FFF;
+    font-size: 17 px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 10px 20px 10px 20px;
+}
+
+.dashboard-artikel,
+.row-artikel {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Halaman Profile */
+.profile-page {
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    background-color: white;
+}
+
+.profile-page .profile-user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile-page .profile-user img {
+    width: 200px;
+    height: 200px;
+}
+
+.profile-page .profile-user h1 {
+    text-align: center;
+    font-size: 21px;
+    margin-top: 20px;
+}
+
+.profile-page .profile-user p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.profile-page .profile-user .profile-user-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-page .profile-user .saldo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    border: 1px solid #FFB800;
+    border-radius: 10px;
+    width: 150px;
+    padding: 10px;
+    margin-top: 10px;
+    color: #FFB800;
+    cursor: pointer;
+}
+
+.saldo:hover {
+    background-color: #FFB800;
+    color: white !important;
+    transition: 100ms ease-in;
+}
+
+.saldo b {
+    text-align: center;
+    margin-top: 10px;
+    display: block;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.saldo img {
+    width: 30px !important;
+    height: 30px !important;
+}
+
+.profile-page .profile-user .edit-profile {
+    border-radius: 11px;
+    background: #DEE7FF;
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.profile-page .informasi-akun {
+    margin-top: 30px;
+}
+
+.profile-page .informasi-akun h2 {
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.profile-page .informasi-akun p {
+    margin-top: 5px;
+}
+
+.profile-page .topik-dibuat {
+    margin-top: 50px;
+}
+
+.profile-page .topik-dibuat .topik {
+    padding: 0px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.profile-page .topik-dibuat h2 {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.home-dashboard {
+    background-color: white;
+    padding: 20px;
+    border-radius: 7px;
+}
+
+.view-artikel {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.view-artikel .tentang-penulis {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.view-artikel .tentang-penulis img {
+    width: 30px;
+    height: 30px;
+}
+
+.view-artikel .artikel {
+    margin-top: 20px;
+}
+
+.info-artikel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-artikel small {
+    margin-top: 5px;
+    display: block;
+}
+
+.artikel-aksi {
+    display: flex;
+    gap: 10px;
+}
+
+.artikel-aksi span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.artikel-aksi span svg {
+    width: 25px;
+}
+
+.isi-artikel h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.isi-artikel img {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.psikolog-mu {
+    background-color: #F6FAFD;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.topup {
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+.topup h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.nominal-mindpoint {
+    margin-top: 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.topup .nominal-mindpoint .nominal span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.topup .nominal-mindpoint .nominal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #1C7892;
+    padding: 15px;
+    color: var(--primary-color);
+    border-radius: 10px;
+}
+
+.topup .nominal-mindpoint .nominal:hover {
+    background-color: rgba(28, 120, 146, 0.5);
+    color: white;
+    border: none;
+}
+
+.text-topup {
+    display: block;
+    margin-top: 15px;
+}
+
+
+@media (min-width:768px) {
+
+    .view-artikel {
+        margin-bottom: 20px;
+    }
+
+    .tes-kesehatan {
+        margin-bottom: 20px;
+    }
+
+    .consultation {
+        margin-bottom: 40px;
+    }
+
+    .modal-content form {
+        overflow-y: hidden;
+        height: auto;
+    }
+
+    .row-artikel {
+        margin-bottom: 50px;
+    }
+
+    .dashboard-artikel {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .modal-content {
+        width: 50%;
+    }
+
+    .forum-header {
+        /* display: flex; */
+        padding: 0px;
+        padding-top: 20px;
+    }
+
+    .tambah-topik {
+        bottom: 30px;
+    }
+
+    .sidebar-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .sidebar-menu svg,
+    .keluar {
+        width: 30px;
+    }
+
+    .sidebar-menu svg:hover,
+    .keluar:hover {
+        transform: scale(1.3);
+        margin-right: -15px;
+        transition: 50ms ease-in;
+    }
+
+    .dashboard-profile img {
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        margin-top: 20px;
+    }
+
+    .content {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        /* width: 10%; */
+        max-width: 75px;
+        min-width: 75px;
+        height: 100vh;
+        background: #374151;
+    }
+
+    main {
+        height: 100vh;
+        overflow-y: auto;
+        padding: 0px 20px 0px 20px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .row-artikel {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .nav-icon {
+        width: 30%;
+    }
+
+    .bottom-navigation {
+        display: none;
+    }
+
+    .banners {
+        height: 250px;
+    }
+
+    .profile span {
+        display: block;
+    }
+
+    .slide {
+        width: 100%;
+        height: 100%;
+    }
+
+    .tambah-topik button b {
+        display: block;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .list-topik {
+        width: 75%;
+    }
+
+    .chat-psikolog {
+        display: block;
+        width: 100%;
+        background-color: white;
+        padding: 30px;
+    }
+
+    .consultation {
+        width: calc(100vw - 150px);
+        display: flex;
+        gap: 30px;
+    }
+
+    nav {
+        padding: 15px 40px 15px 40px;
+    }
+
+    main {
+        box-sizing: border-box;
+        padding: 20px 40px 20px 40px;
+    }
+
+    .row-artikel {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .banners {
+        height: 430px;
+    }
+
+    .nav-icon {
+        width: 15%;
+    }
+
+    .slider-container {
+        height: 450px;
+    }
+
+    .dashboard-profile img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .chat-psikolog .profile-psikolog {
+        display: flex;
+        gap: 20px;
+    }
+
+    .profile-psikolog img {
+        width: 80px;
+        border-radius: 5px;
+    }
+
+    .profile-psikolog .nama-psikolog b {
+        font-size: 20px;
+    }
+
+    .profile-psikolog .nama-psikolog p {
+        width: 70%;
+        margin-top: 10px;
+    }
+
+    .menu-chat {
+        color: #374151;
+        width: 50px;
+        height: 50px !important;
+        border-radius: 100%;
+        border: 4px solid #37415134;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-chat b {
+        font-weight: bolder;
+        font-size: 30px;
+        line-height: 0px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .aksi-chat {
+        margin-top: 10px;
+        display: flex;
+        background-color: #F6FAFD;
+        height: 50px;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .aksi-chat-button {
+        display: flex;
+        gap: 25px;
+    }
+
+    .aksi-chat-button button {
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+
+    .main-chat {
+        margin-top: 30px;
+        position: relative;
+    }
+
+    .chat-list {
+        overflow-y: auto;
+        height: 350px;
+    }
+
+    .pesan-dikirim {
+        display: flex;
+        justify-content: end;
+    }
+
+    .pesan-dikirim p {
+        color: white;
+        width: 50%;
+        background-color: #374151;
+        padding: 30px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .pesan-diterima {
+        margin-top: 20px;
+        background-color: #EFEFEF;
+        color: white;
+        padding: 30px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        width: 50%;
+        right: 0;
+        color: black;
+    }
+
+    .kirim-pesan {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .kirim-pesan input {
+        width: 100%;
+        height: 50px;
+        outline: none;
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .tes-kesehatan {
+        padding: 30px;
+    }
+
+    .kirim-pesan button {
+        border-radius: 100%;
+        background-color: #374151;
+        padding: 10px;
+    }
+
+    .kirim-pesan button svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .tes-kesehatan h1 {
+        color: #000;
+        text-align: center;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .tes-kesehatan p {
+        padding-left: 250px;
+        padding-right: 250px;
+        color: #000;
+        text-align: center;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .tes-kesehatan .ilustration {
+        display: flex;
+        justify-content: center;
+    }
+
+    .tes-kesehatan img {
+        width: 600px;
+    }
+
+    .tes-kesehatan .button-aksi div {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .soal-action {
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .soal-action button {
+        width: 50px;
+        height: 50px;
+        background-color: #374151;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .soal-action img {
+        width: 200px;
+    }
+
+    .laporan-kesehatan p {
+        margin-top: 10px;
+        width: 80%;
+    }
+
+    .category-icon {
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+    }
+
+    .list-kategori {
+        margin-top: 10px;
+    }
+
+    .category-icon.red {
+        background-color: #FF3A3A;
+    }
+
+    .category-icon.yellow {
+        background-color: #E6CD49;
+    }
+
+    .category-icon.green {
+        background-color: #89D839;
+    }
+
+    .category-icon.blue {
+        background-color: #7BFFDF;
+    }
+
+    .category-icon.dark-blue {
+        background-color: #346DFF;
+    }
+
+    .category-icon.purple {
+        background-color: #B311FF;
+    }
+
+    .category-icon.soft-red {
+        background-color: #FF0861;
+    }
+
+    .category-icon.pink {
+        background-color: #FF6D99;
+    }
+
+    .list-kategori {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .forum {
+        width: 100% !important;
+        display: flex;
+        gap: 30px;
+    }
+
+    .forum-header img {
+        display: block;
+    }
+
+    .daftar-topik-kategori {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .row-artikel {
+        margin-bottom: 20px;
+    }
+
+    .profile-page .profile-user {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .profile-page .profile-user h1,
+    .profile-page .profile-user p {
+        text-align: left;
+    }
+
+    .profile-page .profile-user h1 {
+        font-size: 40px;
+    }
+
+    .profile-page .profile-user p {
+        font-size: 17px;
+        width: 80%;
+    }
+
+    .profile-page .user-info {
+        display: flex;
+        /* align-items: center; */
+        gap: 70px;
+    }
+
+    .profile-page .user-info .informasi-akun {
+        width: 50%;
+        margin-top: 50px;
+    }
+
+    .profile-page .user-info .topik-dibuat h2 {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    .profile-page .user-info .topik-dibuat .topik {
+        width: 100%;
+    }
+
+    .consultation {
+        margin-bottom: 0px;
+    }
+
+    .forum {
+        margin-bottom: 0px;
+    }
+
+    .profile-page .profile-user .profile-user-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .profile-psikolog {
+        padding: 0px;
+    }
+
+    .list-psikolog-card {
+        height: 550px;
+        overflow-y: auto;
+    }
+}
