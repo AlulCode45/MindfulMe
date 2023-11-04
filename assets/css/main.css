@@ -68,6 +68,7 @@ li {
     flex-direction: column;
     list-style: none;
     gap: 35px;
+    text-align: center;
 }
 
 .menu-item {
