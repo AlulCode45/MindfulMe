@@ -827,8 +827,8 @@ select option:checked {
 
 .dashboard-artikel,
 .row-artikel {
-    padding-left: 20px;
-    padding-right: 20px;
+    /* padding-left: 20px;
+    padding-right: 20px; */
 }
 
 /* Halaman Profile */
@@ -973,6 +973,7 @@ select option:checked {
 .info-artikel {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .info-artikel small {
@@ -992,7 +993,7 @@ select option:checked {
 }
 
 .artikel-aksi span svg {
-    width: 25px;
+    width: 20px;
 }
 
 .isi-artikel h2 {
