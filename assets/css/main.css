@@ -206,6 +206,7 @@ li {
     background-color: white;
     background: url('../image/tentang2.png') no-repeat;
     background-size: cover;
+    border-radius: 10px;
     height: 350px;
 }
 
@@ -218,6 +219,7 @@ li {
     background-color: white;
     background: url('../image/tentang3.png') no-repeat;
     background-size: cover;
+    border-radius: 10px;
     height: 350px;
 }
 

@@ -80,10 +80,10 @@
                     kesal karena sesuatu yang terjadi secara tidak terduga?
                 </p>
                 <div class="jawaban">
-                    <button>Banyak</button>
-                    <button>Tidak Pernah</button>
-                    <button>Banget</button>
-                    <button>Sering</button>
+                    <button onclick="pilihJawaban(this)">Banyak</button>
+                    <button onclick="pilihJawaban(this)">Tidak Pernah</button>
+                    <button onclick="pilihJawaban(this)">Banget</button>
+                    <button onclick="pilihJawaban(this)">Sering</button>
                 </div>
 
                 <div class="soal-action">
@@ -145,6 +145,16 @@
         </a>
     </div>
 
+    <script>
+        function pilihJawaban(card) {
+            const cards = document.querySelectorAll('.jawaban button');
+            cards.forEach((c) => {
+                c.classList.remove('selected');
+            });
+
+            card.classList.add('selected');
+        }
+    </script>
 </body>
 
 </html>

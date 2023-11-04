@@ -75,42 +75,42 @@
                 <h1>Top Up MindPoint</h1>
                 <b class="text-topup">Masukan Jumlah Saldo</b>
                 <div class="nominal-mindpoint">
-                    <div class="nominal">
+                    <div class="nominal" onclick="pilihNominal(this)">
                         <div class="harga">
                             <span>20 Point</span>
                             <b>RP 70.000</b>
                         </div>
                         <img src="../../assets/image/coin.png" alt="">
                     </div>
-                    <div class="nominal">
+                    <div class="nominal" onclick="pilihNominal(this)">
                         <div class="harga">
                             <span>40 Point</span>
                             <b>RP 70.000</b>
                         </div>
                         <img src="../../assets/image/coin.png" alt="">
                     </div>
-                    <div class="nominal">
+                    <div class="nominal" onclick="pilihNominal(this)">
                         <div class="harga">
                             <span>60 Point</span>
                             <b>RP 70.000</b>
                         </div>
                         <img src="../../assets/image/coin.png" alt="">
                     </div>
-                    <div class="nominal">
+                    <div class="nominal" onclick="pilihNominal(this)">
                         <div class="harga">
                             <span>80 Point</span>
                             <b>RP 70.000</b>
                         </div>
                         <img src="../../assets/image/coin.png" alt="">
                     </div>
-                    <div class="nominal">
+                    <div class="nominal" onclick="pilihNominal(this)">
                         <div class="harga">
                             <span>100 Point</span>
                             <b>RP 70.000</b>
                         </div>
                         <img src="../../assets/image/coin.png" alt="">
                     </div>
-                    <div class="nominal">
+                    <div class="nominal" onclick="pilihNominal(this)">
                         <div class="harga">
                             <span>120 Point</span>
                             <b>RP 70.000</b>
@@ -118,19 +118,25 @@
                         <img src="../../assets/image/coin.png" alt="">
                     </div>
                 </div>
+
+                <b class="text-topup">Metode Pembayaran</b>
                 <div class="metode-pembayaran">
-                    <div class="gopay">
+                    <div class="pembayaran" onclick="pilihPembayaran(this)">
                         <img src="https://datangjikasempat.com/wp-content/uploads/2022/08/LOGO-GOPAY.png" alt="">
                     </div>
-                    <div class="dana">
+                    <div class="pembayaran" onclick="pilihPembayaran(this)">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Logo_dana_blue.svg/1200px-Logo_dana_blue.svg.png"
                             alt="">
                     </div>
-                    <div class="qris">
+                    <div class="pembayaran" onclick="pilihPembayaran(this)">
                         <img src="https://seeklogo.com/images/Q/quick-response-code-indonesia-standard-qris-logo-F300D5EB32-seeklogo.com.png"
                             alt="">
                     </div>
                 </div>
+
+                <button class="bayar-pembayaran">
+                    Bayar Sekarang
+                </button>
             </div>
         </main>
     </div>
@@ -167,6 +173,25 @@
         </a>
     </div>
 
+    <script>
+        function pilihNominal(card) {
+            const cards = document.querySelectorAll('.nominal');
+            cards.forEach((c) => {
+                c.classList.remove('topup-selected-option');
+            });
+
+            card.classList.add('topup-selected-option');
+        }
+        function pilihPembayaran(card) {
+
+            const cards = document.querySelectorAll('.pembayaran');
+            cards.forEach((c) => {
+                c.classList.remove('topup-selected-option');
+            });
+
+            card.classList.add('topup-selected-option');
+        }
+    </script>
 </body>
 
 </html>
