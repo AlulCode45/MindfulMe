@@ -1105,6 +1105,25 @@ select option:checked {
     border-radius: 7px;
 }
 
+.icon-love,
+.icon-comment,
+.icon-bookmark {
+    fill: #b4b4b4;
+
+}
+
+.icon-love:hover {
+    fill: #ff3a3a;
+}
+
+.icon-comment:hover {
+    fill: #ff3a3a;
+}
+
+.icon-bookmark:hover {
+    fill: #4690ff;
+}
+
 @media (min-width:768px) {
     .cari-artikel input {
         width: 300px;
