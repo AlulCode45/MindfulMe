@@ -68,6 +68,7 @@ input {
     box-sizing: border-box;
     width: 100%;
     font-size: 15px;
+    border: 1px solid var(--primary-color);
 }
 
 .button-login {
