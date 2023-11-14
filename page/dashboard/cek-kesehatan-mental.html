@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cek Kesehatan | MindfulMe</title>
     <link rel="stylesheet" href="../../assets/css/dashboard.css">
 </head>
 
@@ -15,6 +15,49 @@
             <p>Harap Tunggu</p>
         </div>
     </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="close-modal">
+                <b>Panduan Tes Kesehatan</b>
+                <svg class="close" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 32 32">
+                    <path fill="currentColor"
+                        d="M16 2C8.2 2 2 8.2 2 16s6.2 14 14 14s14-6.2 14-14S23.8 2 16 2zm0 26C9.4 28 4 22.6 4 16S9.4 4 16 4s12 5.4 12 12s-5.4 12-12 12z" />
+                    <path fill="currentColor"
+                        d="M21.4 23L16 17.6L10.6 23L9 21.4l5.4-5.4L9 10.6L10.6 9l5.4 5.4L21.4 9l1.6 1.6l-5.4 5.4l5.4 5.4z" />
+                </svg>
+            </div>
+            <form>
+                <p>Selamat datang di Tes Tingkat Kecemasan. Untuk mendapatkan informasi yang akurat, harap jawab
+                    pertanyaan-pertanyaan berikut dengan jujur dan sejujur-jujurnya. Tidak ada jawaban yang benar atau
+                    salah, ini
+                    hanya untuk membantu menilai tingkat kecemasan Anda. Setelah selesai, Anda akan menerima hasil yang
+                    dapat
+                    memberikan wawasan mengenai kesehatan mental Anda. Terima kasih atas partisipasinya.</p>
+                <br>
+                <p><strong>Instruksi:</strong></p>
+                <ol>
+                    <li>Baca setiap pernyataan dengan cermat.</li>
+                    <li>Pilih jawaban yang paling sesuai dengan pengalaman dan perasaan Anda.</li>
+                    <li>Pilih satu jawaban untuk setiap pernyataan.</li>
+                </ol>
+                <br>
+                <p><strong>Skala penilaian:</strong></p>
+                <ul>
+                    <li>1: Sering</li>
+                    <li>2: Banget</li>
+                    <li>3: Tidak Pernah</li>
+                    <li>4: Banyak</li>
+                </ul>
+                <br>
+                <p>Ingat, tujuan tes ini adalah untuk memberikan gambaran umum, dan hasil tidak menggantikan saran
+                    profesional. Jika
+                    Anda memiliki kekhawatiran serius tentang kesehatan mental Anda, segera hubungi tenaga kesehatan
+                    atau
+                    profesional yang bersertifikasi melalaui platform kami.</p>
+            </form>
+        </div>
+    </div>
+
     <div class="content">
         <aside class="sidebar">
             <div class="dashboard-profile">
@@ -91,7 +134,7 @@
                         <a href="./pertanyaan-kesehatan.html">
                             <button class="mulai-tes">Mulai Tes</button>
                         </a>
-                        <button class="panduan-tes">Panduan Tes Kesehatan</button>
+                        <button class="panduan-tes open-modal-button">Panduan Tes Kesehatan</button>
                     </div>
                 </div>
             </div>
