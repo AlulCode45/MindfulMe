@@ -13,6 +13,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 button {
     border: none;
     outline: none;
@@ -24,6 +28,25 @@ body {
     margin: 0px;
     font-family: 'Montserrat', sans-serif;
     background-color: #EFEFEF;
+    overflow-x: hidden !important;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: #fff;
+}
+
+.preloader .loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font: 14px arial;
 }
 
 a {
@@ -68,7 +91,7 @@ nav {
 .row-artikel {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
-    gap: 30px;
+    gap: 35px;
     margin-top: 20px;
     margin-bottom: 120px;
 }
@@ -81,8 +104,8 @@ nav {
 
 .card-header {
     width: 100%;
-    border-radius: 20px;
-    height: 200px;
+    border-radius: 3px;
+    height: 225px;
 }
 
 .card:hover {
@@ -92,16 +115,18 @@ nav {
 
 .card-title {
     font-size: 20px;
-    margin-top: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 .date {
     display: block;
     margin-top: 10px;
-    font-size: 15px;
+    font-size: 13px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: bold;
     line-height: normal;
+    color: var(--primary-color);
 }
 
 .bottom-navigation {
@@ -114,6 +139,7 @@ nav {
     display: flex;
     gap: 20px;
     justify-content: space-between;
+    width: 100vw;
 }
 
 .bottom-navigation svg {
@@ -162,7 +188,7 @@ nav {
 
 .cari-artikel input {
     box-sizing: border-box;
-    padding: 15px 10px 15px 10px;
+    padding: 10px;
     border: 1px solid rgba(0, 0, 0, 0.6);
     width: 100%;
     outline: none;
@@ -374,6 +400,7 @@ nav {
 .pesan-dikirim {
     display: flex;
     justify-content: end;
+    margin-top: 10px;
 }
 
 .pesan-dikirim p {
@@ -399,6 +426,12 @@ nav {
     color: black;
 }
 
+.pesan-diterima b {
+    margin-bottom: 10px;
+    display: block;
+    color: var(--primary-color);
+}
+
 .kirim-pesan {
     width: 100%;
     display: flex;
@@ -417,6 +450,7 @@ nav {
     box-sizing: border-box;
     padding-left: 20px;
     padding-right: 20px;
+    border: 1px solid var(--primary-color);
 }
 
 .kirim-pesan button {
@@ -488,7 +522,7 @@ nav {
 
     width: 303px;
     height: 55px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .tes-kesehatan .button-aksi {
@@ -536,6 +570,7 @@ nav {
     padding: 30px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .soal-action button {
@@ -547,8 +582,22 @@ nav {
     align-items: center;
 }
 
+.soal-action button.button-before {
+    background-color: transparent;
+    border: 0.1px solid var(--primary-color);
+}
+
+.soal-action button.button-before:hover {
+    background-color: #374151;
+}
+
+.soal-action button.button-before:hover #button-before {
+    fill: white;
+}
+
 .soal-action img {
-    width: 100px;
+    width: 150px;
+    height: 40px;
 }
 
 .laporan-kesehatan {
@@ -565,6 +614,7 @@ nav {
     margin-top: 10px;
     display: flex;
     justify-content: end;
+    margin-bottom: 100px;
 }
 
 .download-button button {
@@ -613,6 +663,10 @@ span .category {
     margin-top: 20px;
 }
 
+.chat-forum .topik {
+    padding: 0px;
+}
+
 .stress {
     background-color: #FF3A3A;
     padding: 5px;
@@ -642,6 +696,10 @@ span .category {
 .judul-topik h1 {
     font-size: 23px;
     margin-top: 10px;
+}
+
+.chat-forum .topik .judul-topik h1 {
+    margin-bottom: 20px;
 }
 
 .isi-topik p {
@@ -674,7 +732,8 @@ span .category {
 .forum-header {
     display: flex;
     padding: 20px 20px 0px 20px;
-    gap: 10px;
+    gap: 20px;
+    align-items: center;
 }
 
 .forum-header img {
@@ -690,6 +749,10 @@ span .category {
     padding: 5px 15px 5px 15px;
 }
 
+.forum-header-content h1 {
+    font-size: 25px;
+}
+
 .daftar-topik-kategori {
     display: none;
 }
@@ -701,6 +764,8 @@ main {
 .footer-topik {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 10px;
 }
 
 .footer-topik span {
@@ -728,7 +793,7 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .modal-content {
@@ -742,6 +807,7 @@ main {
     border: 1px solid #888;
     width: 80%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
 .modal-content form {
@@ -825,11 +891,6 @@ select option:checked {
     padding: 10px 20px 10px 20px;
 }
 
-.dashboard-artikel,
-.row-artikel {
-    /* padding-left: 20px;
-    padding-right: 20px; */
-}
 
 /* Halaman Profile */
 .profile-page {
@@ -908,7 +969,6 @@ select option:checked {
     background: #DEE7FF;
     width: 200px;
     height: 40px;
-    margin-top: 20px;
     font-weight: bold;
 }
 
@@ -944,7 +1004,7 @@ select option:checked {
 
 .home-dashboard {
     background-color: white;
-    padding: 20px;
+    padding: 35px;
     border-radius: 7px;
 }
 
@@ -974,6 +1034,7 @@ select option:checked {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    margin-top: 10px;
 }
 
 .info-artikel small {
@@ -1053,8 +1114,6 @@ select option:checked {
     border-radius: 10px;
 }
 
-/* .topup .nominal-mindpoint .nominal:hover {
-} */
 
 .text-topup {
     display: block;
@@ -1071,7 +1130,15 @@ select option:checked {
 
 .metode-pembayaran img {
     width: 100px;
-    height: 50px;
+}
+
+.bayar-gopay {
+    height: 40px;
+}
+
+.bayar-qris,
+.bayar-dana {
+    height: 35px;
 }
 
 .pembayaran {
@@ -1081,10 +1148,13 @@ select option:checked {
     border-radius: 7px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 50px;
 }
 
 .pembayaran:hover {
     background-color: rgba(28, 120, 146, 0.5);
+    border: none;
 }
 
 .topup-selected-option {
@@ -1124,7 +1194,279 @@ select option:checked {
     fill: #4690ff;
 }
 
+.chat-forum {
+    background-color: white;
+    padding: 20px;
+    /* height: 100%; */
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+input,
+textarea {
+    box-sizing: border-box;
+}
+
+.form-edit-pengguna h4 {
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+.form-edit-pengguna form {
+    margin-top: 25px;
+}
+
+.form-edit-pengguna label {
+    display: block;
+}
+
+.form-edit-pengguna input,
+.form-edit-pengguna textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    outline: none;
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.form-edit-pengguna .form-group {
+    margin-top: 10px;
+}
+
+.edit-photo {
+    position: sticky;
+    background: rgba(0, 0, 0, 0.4);
+    width: 200px;
+    margin-top: -205px;
+    height: 200px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 100ms ease-in-out;
+}
+
+.edit-photo svg {
+    fill: white;
+}
+
+.alert {
+    position: absolute;
+    right: -250px;
+    z-index: 9999999;
+    gap: 7px;
+    align-items: center;
+    display: none;
+}
+
+.alert-success {
+    background-color: rgba(25, 135, 84, 0.6);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.scan-to-buy .content-buy {
+    display: flex;
+    justify-content: center;
+}
+
+.konfirmasi-pembayaran-psikolog {
+    overflow-y: auto;
+    height: 300px;
+}
+
+.konfirmasi-pembayaran-psikolog p {
+    margin-top: 15px;
+}
+
+.total-pembayaran {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.bayar-psikolog {
+    display: flex;
+    justify-content: end;
+}
+
+.bayar-psikolog button {
+    width: 174.036px;
+    height: 45.478px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 6px;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.forum-comment {
+    margin-top: 10px;
+}
+
+.forum-comment h3 {
+    margin-top: 40px;
+}
+
+.forum-comment .action-comment {
+    display: flex;
+    padding: 15px 20px 15px 10px;
+    background-color: #f8f8f8;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.action-comment select {
+    width: 100px;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: black;
+}
+
+
+.forum-comment .comment {
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(55, 65, 81, 0.3);
+}
+
+.comment .user-comment {
+    display: flex;
+    gap: 15px;
+}
+
+.comment .user-comment b {
+    font-size: 17px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.comment .comment-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.comment-action {
+    margin-top: 10px;
+    display: none;
+}
+
+.comment-action .button-reply {
+    background-color: var(--primary-color);
+    color: white;
+    width: 100px;
+    height: 35px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.dashboard-header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.dashboard-header-card {
+    box-shadow: 2px 3px 20px 1px rgba(0, 0, 0, 0.08);
+    -webkit-box-shadow: 2px 3px 20px 1px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: 2px 3px 20px 1px rgba(0, 0, 0, 0.08);
+    background-color: white;
+    width: 100%;
+    height: 130px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    border-left: 8px solid #607D8B;
+}
+
+.dashboard-header-card-content b {
+    font-size: 20px;
+}
+
+.dashboard-header-card-content p {
+    font-size: 60px;
+    font-weight: bolder;
+    display: flex;
+    align-items: end;
+    gap: 10px;
+}
+
+.dashboard-header-card-content p>span {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.comment-chat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.comment-rate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reply-forum {
+    margin-top: 30px;
+}
+
+.reply-forum textarea {
+    width: 100%;
+    border: 1px solid var(--primary-color);
+    margin-top: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.reply-forum .up-reply {
+    background-color: var(--primary-color);
+    width: 200px;
+    padding: 20px;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
 @media (min-width:768px) {
+    .slider-container {
+        margin-top: 20px;
+    }
+
+    .dashboard-header {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .download-button {
+        margin-bottom: 0px;
+    }
+
+    .chat-forum {
+        margin-bottom: 50px;
+    }
+
     .cari-artikel input {
         width: 300px;
     }
@@ -1230,7 +1572,7 @@ select option:checked {
 
     .row-artikel {
         display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .nav-icon {
@@ -1260,6 +1602,16 @@ select option:checked {
 }
 
 @media (min-width: 1024px) {
+
+    .dashboard-header {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .chat-forum {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
     .psikolog-list {
         width: 60%;
     }
@@ -1296,7 +1648,7 @@ select option:checked {
 
     .row-artikel {
         display: grid;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
     .banners {

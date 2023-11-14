@@ -9,7 +9,12 @@
 </head>
 
 <body>
-    <!-- Modal -->
+    <div class="preloader">
+        <div class="loading">
+            <img src="../../assets/image/loading.gif" width="80">
+            <p>Harap Tunggu</p>
+        </div>
+    </div>
     <div id="myModal" class="modal">
         <div class="modal-content">
             <div class="close-modal">
@@ -45,7 +50,7 @@
                     </select>
                 </div>
                 <div class="modal-footer">
-                    <button class="simpan-topik">Tambahkan</button>
+                    <button type="button" class="simpan-topik" onclick="showAlert()">Tambahkan</button>
                 </div>
             </form>
         </div>
@@ -113,145 +118,168 @@
         </nav>
 
         <main>
+            <div class="alert alert-success" id="alert">
+                <p>Berhasil Menambahkan</p><svg width="24px" height="24px" viewBox="0 0 0.72 0.72" id="check"
+                    data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color">
+                    <path id="primary"
+                        d="M0.3 0.54a0.03 0.03 0 0 1 -0.021 -0.009l-0.15 -0.15a0.03 0.03 0 0 1 0.043 -0.043l0.129 0.129 0.249 -0.249a0.03 0.03 0 1 1 0.043 0.043l-0.27 0.27A0.03 0.03 0 0 1 0.3 0.54Z"
+                        style="fill: rgb(255, 255, 255);" />
+                </svg>
+            </div>
             <div class="forum-header">
                 <img src="../../assets/image/icon.png" alt="">
                 <input type="text" placeholder="Cari Forum Diskusi ..">
             </div>
             <div class="forum">
                 <div class="list-topik">
-                    <div class="topik">
-                        <div class="topik-creator">
-                            <img src="../../assets/image/tentang2.png" width="40" height="40" alt="">
-                            <span>Nevan Anjayani, S.h</span>
-                            <span class="category stress">Stress</span>
-                            <span class="category curhat">Curhat</span>
-                        </div>
-                        <div class="judul-topik">
-                            <h1>Meditasi dan Teknik Relaksasi Lainnya untuk Meningkatkan Kesehatan Mental</h1>
-                        </div>
-                        <div class="isi-topik">
-                            <p>
-                                Mengulas berbagai teknik relaksasi, termasuk meditasi, yoga, dan metode lainnya, serta
-                                bagaimana mereka dapat digunakan
-                                untuk meningkatkan kesehatan mental dan mengurangi stres.
-                            </p>
-                        </div>
-                        <div class="footer-topik">
-                            <span>
-                                30 September 2023 · 30k views
-                            </span>
-                            <div class="topik-action">
+                    <a href="./chat-forum.html">
+                        <div class="topik">
+                            <div class="topik-creator">
+                                <img src="../../assets/image/tentang2.png" width="40" height="40" alt="">
+                                <span>Nevan Anjayani, S.h</span>
+                                <span class="category stress">Stress</span>
+                                <span class="category curhat">Curhat</span>
+                            </div>
+                            <div class="judul-topik">
+                                <h1>Meditasi dan Teknik Relaksasi Lainnya untuk Meningkatkan Kesehatan Mental</h1>
+                            </div>
+                            <div class="isi-topik">
+                                <p>
+                                    Mengulas berbagai teknik relaksasi, termasuk meditasi, yoga, dan metode lainnya,
+                                    serta
+                                    bagaimana mereka dapat digunakan
+                                    untuk meningkatkan kesehatan mental dan mengurangi stres.
+                                </p>
+                            </div>
+                            <div class="footer-topik">
                                 <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                                        viewBox="0 0 1792 1536">
-                                        <path fill="#b4b4b4"
-                                            d="M1792 640q0 174-120 321.5t-326 233t-450 85.5q-70 0-145-8q-198 175-460 242q-49 14-114 22q-17 2-30.5-9t-17.5-29v-1q-3-4-.5-12t2-10t4.5-9.5l6-9l7-8.5l8-9q7-8 31-34.5t34.5-38t31-39.5t32.5-51t27-59t26-76q-157-89-247.5-220T0 640q0-130 71-248.5T262 187T548 50.5T896 0q244 0 450 85.5t326 233T1792 640z" />
-                                    </svg> 2k+
+                                    30 September 2023 · 30k views
                                 </span>
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24">
-                                        <path fill="#ff3a3a"
-                                            d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53L12 21.35Z" />
-                                    </svg> 25k
-                                </span>
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24">
-                                        <path fill="#4690ff"
-                                            d="M5 21V5q0-.825.588-1.413T7 3h10q.825 0 1.413.588T19 5v16l-7-3l-7 3Z" />
-                                    </svg>
-                                </span>
+                                <div class="topik-action">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            viewBox="0 0 1792 1536">
+                                            <path fill="#b4b4b4"
+                                                d="M1792 640q0 174-120 321.5t-326 233t-450 85.5q-70 0-145-8q-198 175-460 242q-49 14-114 22q-17 2-30.5-9t-17.5-29v-1q-3-4-.5-12t2-10t4.5-9.5l6-9l7-8.5l8-9q7-8 31-34.5t34.5-38t31-39.5t32.5-51t27-59t26-76q-157-89-247.5-220T0 640q0-130 71-248.5T262 187T548 50.5T896 0q244 0 450 85.5t326 233T1792 640z" />
+                                        </svg> 2k+
+                                    </span>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34"
+                                            viewBox="0 0 24 24">
+                                            <path fill="#ff3a3a"
+                                                d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53L12 21.35Z" />
+                                        </svg> 25k
+                                    </span>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38"
+                                            viewBox="0 0 24 24">
+                                            <path fill="#4690ff"
+                                                d="M5 21V5q0-.825.588-1.413T7 3h10q.825 0 1.413.588T19 5v16l-7-3l-7 3Z" />
+                                        </svg>
+                                    </span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="topik">
-                        <div class="topik-creator">
-                            <img src="../../assets/image/tentang2.png" width="40" height="40" alt="">
-                            <span>Nevan Anjayani, S.h</span>
-                            <span class="category stress">Stress</span>
-                            <span class="category curhat">Curhat</span>
-                        </div>
-                        <div class="judul-topik">
-                            <h1>Kesehatan Mental pada Remaja: Tantangan dan Solusi.</h1>
-                        </div>
-                        <div class="isi-topik">
-                            <p>
-                                Menjelaskan permasalahan kesehatan mental yang sering dialami oleh remaja dan memberikan
-                                saran tentang cara mendukung
-                                mereka selama masa ini.
-                            </p>
-                        </div>
-                        <div class="footer-topik">
-                            <span>
-                                30 September 2023 · 30k views
-                            </span>
-                            <div class="topik-action">
+                    </a>
+                    <a href="./chat-forum.html">
+                        <div class="topik">
+                            <div class="topik-creator">
+                                <img src="../../assets/image/tentang2.png" width="40" height="40" alt="">
+                                <span>Nevan Anjayani, S.h</span>
+                                <span class="category stress">Stress</span>
+                                <span class="category curhat">Curhat</span>
+                            </div>
+                            <div class="judul-topik">
+                                <h1>Kesehatan Mental pada Remaja: Tantangan dan Solusi.</h1>
+                            </div>
+                            <div class="isi-topik">
+                                <p>
+                                    Menjelaskan permasalahan kesehatan mental yang sering dialami oleh remaja dan
+                                    memberikan
+                                    saran tentang cara mendukung
+                                    mereka selama masa ini.
+                                </p>
+                            </div>
+                            <div class="footer-topik">
                                 <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                                        viewBox="0 0 1792 1536">
-                                        <path fill="#b4b4b4" class="icon-comment"
-                                            d="M1792 640q0 174-120 321.5t-326 233t-450 85.5q-70 0-145-8q-198 175-460 242q-49 14-114 22q-17 2-30.5-9t-17.5-29v-1q-3-4-.5-12t2-10t4.5-9.5l6-9l7-8.5l8-9q7-8 31-34.5t34.5-38t31-39.5t32.5-51t27-59t26-76q-157-89-247.5-220T0 640q0-130 71-248.5T262 187T548 50.5T896 0q244 0 450 85.5t326 233T1792 640z" />
-                                    </svg> 2k+
+                                    30 September 2023 · 30k views
                                 </span>
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24">
-                                        <path fill="#ff3a3a" class="icon-love"
-                                            d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53L12 21.35Z" />
-                                    </svg> 25k
-                                </span>
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24">
-                                        <path class="icon-bookmark" fill="#4690ff"
-                                            d="M5 21V5q0-.825.588-1.413T7 3h10q.825 0 1.413.588T19 5v16l-7-3l-7 3Z" />
-                                    </svg>
-                                </span>
+                                <div class="topik-action">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            viewBox="0 0 1792 1536">
+                                            <path fill="#b4b4b4" class="icon-comment"
+                                                d="M1792 640q0 174-120 321.5t-326 233t-450 85.5q-70 0-145-8q-198 175-460 242q-49 14-114 22q-17 2-30.5-9t-17.5-29v-1q-3-4-.5-12t2-10t4.5-9.5l6-9l7-8.5l8-9q7-8 31-34.5t34.5-38t31-39.5t32.5-51t27-59t26-76q-157-89-247.5-220T0 640q0-130 71-248.5T262 187T548 50.5T896 0q244 0 450 85.5t326 233T1792 640z" />
+                                        </svg> 2k+
+                                    </span>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34"
+                                            viewBox="0 0 24 24">
+                                            <path fill="#ff3a3a" class="icon-love"
+                                                d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53L12 21.35Z" />
+                                        </svg> 25k
+                                    </span>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38"
+                                            viewBox="0 0 24 24">
+                                            <path class="icon-bookmark" fill="#4690ff"
+                                                d="M5 21V5q0-.825.588-1.413T7 3h10q.825 0 1.413.588T19 5v16l-7-3l-7 3Z" />
+                                        </svg>
+                                    </span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="topik">
-                        <div class="topik-creator">
-                            <img src="../../assets/image/tentang2.png" width="40" height="40" alt="">
-                            <span>Nevan Anjayani, S.h</span>
-                            <span class="category stress">Stress</span>
-                            <span class="category curhat">Curhat</span>
-                        </div>
-                        <div class="judul-topik">
-                            <h1>Parenting dan Kesehatan Mental: Bagaimana Mendukung Kesejahteraan Anak-anak dan Orang
-                                Tua</h1>
-                        </div>
-                        <div class="isi-topik">
-                            <p>
-                                Membahas tantangan yang dihadapi orang tua dalam menjaga kesehatan mental mereka dan
-                                anak-anak mereka, serta strategi
-                                untuk mendukung keduanya.
-                            </p>
-                        </div>
-                        <div class="footer-topik">
-                            <span>
-                                30 September 2023 · 30k views
-                            </span>
-                            <div class="topik-action">
+                    </a>
+                    <a href="./chat-forum.html">
+                        <div class="topik">
+                            <div class="topik-creator">
+                                <img src="../../assets/image/tentang2.png" width="40" height="40" alt="">
+                                <span>Nevan Anjayani, S.h</span>
+                                <span class="category stress">Stress</span>
+                                <span class="category curhat">Curhat</span>
+                            </div>
+                            <div class="judul-topik">
+                                <h1>Parenting dan Kesehatan Mental: Bagaimana Mendukung Kesejahteraan Anak-anak dan
+                                    Orang
+                                    Tua</h1>
+                            </div>
+                            <div class="isi-topik">
+                                <p>
+                                    Membahas tantangan yang dihadapi orang tua dalam menjaga kesehatan mental mereka dan
+                                    anak-anak mereka, serta strategi
+                                    untuk mendukung keduanya.
+                                </p>
+                            </div>
+                            <div class="footer-topik">
                                 <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                                        viewBox="0 0 1792 1536">
-                                        <path fill="#b4b4b4" class="icon-comment"
-                                            d="M1792 640q0 174-120 321.5t-326 233t-450 85.5q-70 0-145-8q-198 175-460 242q-49 14-114 22q-17 2-30.5-9t-17.5-29v-1q-3-4-.5-12t2-10t4.5-9.5l6-9l7-8.5l8-9q7-8 31-34.5t34.5-38t31-39.5t32.5-51t27-59t26-76q-157-89-247.5-220T0 640q0-130 71-248.5T262 187T548 50.5T896 0q244 0 450 85.5t326 233T1792 640z" />
-                                    </svg> 2k+
+                                    30 September 2023 · 30k views
                                 </span>
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24">
-                                        <path fill="#ff3a3a" class="icon-love"
-                                            d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53L12 21.35Z" />
-                                    </svg> 25k
-                                </span>
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24">
-                                        <path class="icon-bookmark" fill="#4690ff"
-                                            d="M5 21V5q0-.825.588-1.413T7 3h10q.825 0 1.413.588T19 5v16l-7-3l-7 3Z" />
-                                    </svg>
-                                </span>
+                                <div class="topik-action">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            viewBox="0 0 1792 1536">
+                                            <path fill="#b4b4b4" class="icon-comment"
+                                                d="M1792 640q0 174-120 321.5t-326 233t-450 85.5q-70 0-145-8q-198 175-460 242q-49 14-114 22q-17 2-30.5-9t-17.5-29v-1q-3-4-.5-12t2-10t4.5-9.5l6-9l7-8.5l8-9q7-8 31-34.5t34.5-38t31-39.5t32.5-51t27-59t26-76q-157-89-247.5-220T0 640q0-130 71-248.5T262 187T548 50.5T896 0q244 0 450 85.5t326 233T1792 640z" />
+                                        </svg> 2k+
+                                    </span>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34"
+                                            viewBox="0 0 24 24">
+                                            <path fill="#ff3a3a" class="icon-love"
+                                                d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53L12 21.35Z" />
+                                        </svg> 25k
+                                    </span>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38"
+                                            viewBox="0 0 24 24">
+                                            <path class="icon-bookmark" fill="#4690ff"
+                                                d="M5 21V5q0-.825.588-1.413T7 3h10q.825 0 1.413.588T19 5v16l-7-3l-7 3Z" />
+                                        </svg>
+                                    </span>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <div class="daftar-topik-kategori">
@@ -346,56 +374,10 @@
             </svg>
         </a>
     </div>
-    <script>
-        // JavaScript untuk mengelola tampilan modal
 
-        // Ambil elemen modal
-        var modal = document.getElementById('myModal');
-
-        // Ambil elemen tombol untuk membuka modal
-        var openModalButton = document.querySelector('.open-modal-button');
-
-        // Ketika tombol dibuka, tampilkan modal
-        openModalButton.addEventListener('click', function () {
-            modal.style.display = 'block';
-            modal.style.zIndex = "99999"
-        });
-
-        // Ambil elemen tombol untuk menutup modal
-        var closeBtn = document.querySelector('.close');
-
-        // Ketika tombol ditutup, sembunyikan modal
-        closeBtn.addEventListener('click', function () {
-            modal.style.display = 'none';
-            modal.style.zIndex = "99999"
-        });
-
-        // Ketika pengguna mengklik di luar modal, sembunyikan modal
-        window.addEventListener('click', function (event) {
-            if (event.target == modal) {
-                modal.style.display = 'none';
-                modal.style.zIndex = "-99999"
-            }
-        });
-
-        // JavaScript untuk mengubah tampilan opsi yang sedang dipilih
-        var selectElement = document.getElementById('mySelect');
-
-        selectElement.addEventListener('change', function () {
-            var selectedOption = this.options[this.selectedIndex];
-            selectElement.style.backgroundColor = selectedOption.style.backgroundColor;
-            selectElement.style.color = selectedOption.style.color;
-        });
-
-        selectElement.addEventListener('focus', function () {
-            this.classList.add('focus');
-        });
-
-        selectElement.addEventListener('blur', function () {
-            this.classList.remove('focus');
-        });
-    </script>
-
+    <script src="../../assets/js/alert.js"></script>
+    <script src="../../assets/js/main.js"></script>
 </body>
+
 
 </html>

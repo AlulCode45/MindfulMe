@@ -9,6 +9,42 @@
 </head>
 
 <body>
+    <div class="preloader">
+        <div class="loading">
+            <img src="../../assets/image/loading.gif" width="80">
+            <p>Harap Tunggu</p>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="close-modal">
+                <b>Scan Untuk Membayar</b>
+                <svg onclick="showAlert()" class="close" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                    viewBox="0 0 32 32">
+                    <path fill="currentColor"
+                        d="M16 2C8.2 2 2 8.2 2 16s6.2 14 14 14s14-6.2 14-14S23.8 2 16 2zm0 26C9.4 28 4 22.6 4 16S9.4 4 16 4s12 5.4 12 12s-5.4 12-12 12z" />
+                    <path fill="currentColor"
+                        d="M21.4 23L16 17.6L10.6 23L9 21.4l5.4-5.4L9 10.6L10.6 9l5.4 5.4L21.4 9l1.6 1.6l-5.4 5.4l5.4 5.4z" />
+                </svg>
+            </div>
+            <div class="scan-to-buy">
+                <div class="content-buy">
+                    <img src="../../assets/image/qrcode.png" alt="">
+                </div>
+                <ol>
+                    <li>1. Buka Aplikasi Dana</li>
+                    <li>2. Pilih Menu Kirim</li>
+                    <li>3. Pilih Pembayaran dengan QR Code</li>
+                    <li>4. Pindai QR Code</li>
+                    <li>5. Verifikasi Informasi Pembayaran</li>
+                    <li>6. Konfirmasi Pembayaran</li>
+                    <li>7. Tunggu Konfirmasi</li>
+                    <li>7. Simpan Bukti Pembayaran</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
     <div class="content">
         <aside class="sidebar">
             <div class="dashboard-profile">
@@ -71,6 +107,15 @@
         </nav>
 
         <main>
+            <div class="alert alert-success" id="alert">
+                <p>Pembayaran Berhasil</p><svg width="24px" height="24px" viewBox="0 0 0.72 0.72" id="check"
+                    data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color">
+                    <path id="primary"
+                        d="M0.3 0.54a0.03 0.03 0 0 1 -0.021 -0.009l-0.15 -0.15a0.03 0.03 0 0 1 0.043 -0.043l0.129 0.129 0.249 -0.249a0.03 0.03 0 1 1 0.043 0.043l-0.27 0.27A0.03 0.03 0 0 1 0.3 0.54Z"
+                        style="fill: rgb(255, 255, 255);" />
+                </svg>
+            </div>
+
             <div class="topup">
                 <h1>Top Up MindPoint</h1>
                 <b class="text-topup">Masukan Jumlah Saldo</b>
@@ -122,19 +167,18 @@
                 <b class="text-topup">Metode Pembayaran</b>
                 <div class="metode-pembayaran">
                     <div class="pembayaran" onclick="pilihPembayaran(this)">
-                        <img src="https://datangjikasempat.com/wp-content/uploads/2022/08/LOGO-GOPAY.png" alt="">
+                        <img src="../../assets/image/LOGO-GOPAY.png" alt="" class="bayar-gopay">
                     </div>
                     <div class="pembayaran" onclick="pilihPembayaran(this)">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Logo_dana_blue.svg/1200px-Logo_dana_blue.svg.png"
-                            alt="">
+                        <img src="../../assets/image/Logo_dana_blue.png" alt="" class="bayar-dana">
                     </div>
                     <div class="pembayaran" onclick="pilihPembayaran(this)">
-                        <img src="https://seeklogo.com/images/Q/quick-response-code-indonesia-standard-qris-logo-F300D5EB32-seeklogo.com.png"
-                            alt="">
+                        <img src="../../assets/image/quick-response-code-indonesia-standard-qris.png" alt=""
+                            class="bayar-qris">
                     </div>
                 </div>
 
-                <button class="bayar-pembayaran">
+                <button class="bayar-pembayaran open-modal-button">
                     Bayar Sekarang
                 </button>
             </div>
@@ -173,25 +217,8 @@
         </a>
     </div>
 
-    <script>
-        function pilihNominal(card) {
-            const cards = document.querySelectorAll('.nominal');
-            cards.forEach((c) => {
-                c.classList.remove('topup-selected-option');
-            });
-
-            card.classList.add('topup-selected-option');
-        }
-        function pilihPembayaran(card) {
-
-            const cards = document.querySelectorAll('.pembayaran');
-            cards.forEach((c) => {
-                c.classList.remove('topup-selected-option');
-            });
-
-            card.classList.add('topup-selected-option');
-        }
-    </script>
+    <script src="../../assets/js/alert.js"></script>
+    <script src="../../assets/js/main.js"></script>
 </body>
 
 </html>

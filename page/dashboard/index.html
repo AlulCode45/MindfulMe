@@ -9,6 +9,13 @@
 </head>
 
 <body>
+    <div class="preloader">
+        <div class="loading">
+            <img src="../../assets/image/loading.gif" width="80">
+            <p>Harap Tunggu</p>
+        </div>
+    </div>
+
     <div class="content">
         <aside class="sidebar">
             <div class="dashboard-profile">
@@ -71,13 +78,47 @@
         </nav>
 
         <main>
-            <div class="home-dashboard">
-                <div class="slider-container">
-                    <div class="slider" id="slider">
-                        <img src="../../assets/image/banners/banner1.png" class="banners slide slide1" alt="">
-                        <img src="../../assets/image/banners/banner2.png" class="banners slide slide1" alt="">
+            <div class="slider-container">
+                <div class="slider" id="slider">
+                    <img src="../../assets/image/banners/banner1.png" class="banners slide slide1" alt="">
+                    <img src="../../assets/image/banners/banner2.png" class="banners slide slide1" alt="">
+                </div>
+            </div>
+
+            <div class="dashboard-header">
+                <div class="dashboard-header-card">
+                    <svg fill="#000000" width="65" height="65" viewBox="0 0 2.4 2.4" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1.6 0.099H0.8a0.501 0.501 0 0 0 -0.501 0.501v0.8a0.899 0.899 0 0 0 1.8 0v-0.8A0.501 0.501 0 0 0 1.597 0.099ZM0.501 0.6A0.299 0.299 0 0 1 0.8 0.301h0.8a0.299 0.299 0 0 1 0.299 0.299v0.501H0.501Zm1.4 0.8a0.701 0.701 0 0 1 -1.4 0V1.301h1.4Zm-0.6 -0.8h0.2V0.8H1.301v0.2H1.101V0.8H0.899V0.6h0.2V0.4h0.2Z" />
+                    </svg>
+                    <div class="dashboard-header-card-content">
+                        <b>Jumlah Psikolog Aktif</b>
+                        <p>2 <span>Dokter</span> </p>
                     </div>
                 </div>
+                <div class="dashboard-header-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24">
+                        <path fill="#374151"
+                            d="M3 12c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h8c1.1 0 2 .9 2 2v5c0 1.1-.9 2-2 2H9v3l-3-3H3zm18 6c1.1 0 2-.9 2-2v-5c0-1.1-.9-2-2-2h-6v1c0 2.2-1.8 4-4 4v2c0 1.1.9 2 2 2h2v3l3-3h3z" />
+                    </svg>
+                    <div class="dashboard-header-card-content">
+                        <b>Jumlah Pertanyaan</b>
+                        <p>2 <span>Topik</span> </p>
+                    </div>
+                </div>
+                <div class="dashboard-header-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 2048 2048">
+                        <path fill="#374151"
+                            d="M347 1024h-39l716 716l588-588h181l-769 769l-865-864q-35-35-62-75t-47-86h243l283-282l448 447l320-319l155 154h355q32-51 49-108t17-117q0-87-32-162t-89-130t-132-87t-163-32q-84 0-149 26t-120 70t-105 97t-106 111q-54-54-105-109t-106-99t-121-72t-148-28q-86 0-161 32t-132 89t-89 132t-33 162q0 47 11 97H9q-5-24-6-48t-2-48q0-113 42-212t116-173t173-116t212-43q83 0 148 19t120 52t106 81t106 103q55-56 105-103t106-80t121-53t148-19q112 0 211 42t172 116t116 172t43 211q0 97-34 188t-97 167h-470l-101-102l-320 321l-448-449l-229 230z" />
+                    </svg>
+                    <div class="dashboard-header-card-content">
+                        <b>Jumlah Tes kesehatan</b>
+                        <p>5 <span>Percobaan</span> </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="home-dashboard">
 
                 <div class="dashboard-artikel">
                     <h1 class="text-artikel">
@@ -91,71 +132,87 @@
                     <a href="./view-artikel.html">
                         <div class="card">
                             <img src="../../assets/image/artikel/artikel1.png" alt="" class="card-header">
+                            <span class="date">
+                                Muhammad Khoyron AF • Oct 12, 2023
+                            </span>
                             <h2 class="card-title">
                                 Depresi Dalam Remaja: Tanda-tanda dan Solusi
 
                             </h2>
-                            <span class="date">
-                                Oct 12, 2023 • 3 min read
-                            </span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat excepturi dolores
+                                fugiat voluptatum molestiae sequi a dolorem voluptatem recusandae ducimus. </p>
                         </div>
-                    </a><a href="./view-artikel.html">
+                    </a>
+                    <a href="./view-artikel.html">
                         <div class="card">
                             <img src="../../assets/image/artikel/artikel2.png" alt="" class="card-header">
+                            <span class="date">
+                                Muhammad Khoyron AF • Oct 12, 2023
+                            </span>
                             <h2 class="card-title">
                                 Kesehatan Mental dan Pandemi: Tantangan Terbesar Kita
                             </h2>
-                            <span class="date">
-                                Oct 12, 2023 • 3 min read
-                            </span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat excepturi dolores
+                                fugiat voluptatum molestiae sequi a dolorem voluptatem recusandae ducimus. </p>
                         </div>
                     </a>
-
                     <a href="./view-artikel.html">
                         <div class="card">
                             <img src="../../assets/image/artikel/artikel3.png" alt="" class="card-header">
+                            <span class="date">
+                                Muhammad Khoyron AF • Oct 12, 2023
+                            </span>
                             <h2 class="card-title">
                                 Meditasi Mindfulness: Kunci Kesehatan Mental Anda
                             </h2>
-                            <span class="date">
-                                Oct 12, 2023 • 3 min read
-                            </span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat excepturi dolores
+                                fugiat voluptatum molestiae sequi a dolorem voluptatem recusandae ducimus. </p>
                         </div>
                     </a>
-
                     <a href="./view-artikel.html">
                         <div class="card">
                             <img src="../../assets/image/artikel/artikel4.png" alt="" class="card-header">
+                            <span class="date">
+                                Muhammad Khoyron AF • Oct 12, 2023
+                            </span>
                             <h2 class="card-title">
                                 Resolusi Tahun Baru dan Kesehatan Mental
+
                             </h2>
-                            <span class="date">
-                                Oct 12, 2023 • 3 min read
-                            </span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat excepturi dolores
+                                fugiat voluptatum molestiae sequi a dolorem voluptatem recusandae ducimus. </p>
                         </div>
                     </a>
                     <a href="./view-artikel.html">
                         <div class="card">
                             <img src="../../assets/image/artikel/artikel5.png" alt="" class="card-header">
+                            <span class="date">
+                                Muhammad Khoyron AF • Oct 12, 2023
+                            </span>
                             <h2 class="card-title">
                                 Mengatasi Stigma Kesehatan Mental: Perjuangan Bersama
+
                             </h2>
-                            <span class="date">
-                                Oct 12, 2023 • 3 min read
-                            </span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat excepturi dolores
+                                fugiat voluptatum molestiae sequi a dolorem voluptatem recusandae ducimus. </p>
                         </div>
                     </a>
+
                     <a href="./view-artikel.html">
                         <div class="card">
                             <img src="../../assets/image/artikel/artikel6.png" alt="" class="card-header">
+                            <span class="date">
+                                Muhammad Khoyron AF • Oct 12, 2023
+                            </span>
                             <h2 class="card-title">
                                 Dukungan Keluarga dalam Krisis Kesehatan Mental
+
                             </h2>
-                            <span class="date">
-                                Oct 12, 2023 • 3 min read
-                            </span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat excepturi dolores
+                                fugiat voluptatum molestiae sequi a dolorem voluptatem recusandae ducimus. </p>
                         </div>
                     </a>
+
 
                 </div>
             </div>
@@ -195,52 +252,7 @@
     </div>
 
 
-    <script>
-        const slider = document.getElementById("slider");
-
-        let slideIndex = 0;
-        let interval; // Variabel untuk menyimpan ID interval
-
-        function showSlide(index) {
-            if (index < 0) {
-                slideIndex = slider.children.length - 1;
-            } else if (index >= slider.children.length) {
-                slideIndex = 0;
-            }
-            slider.style.transform = `translateX(-${slideIndex * 100}%)`;
-        }
-
-        function nextSlide() {
-            slideIndex++;
-            showSlide(slideIndex);
-        }
-
-        function prevSlide() {
-            slideIndex--;
-            showSlide(slideIndex);
-        }
-
-
-        // Fungsi untuk memulai otomatis pengguliran
-        function startAutoPlay() {
-            interval = setInterval(nextSlide, 3000); // Ganti slide setiap 3 detik
-        }
-
-        // Fungsi untuk menghentikan otomatis pengguliran
-        function stopAutoPlay() {
-            clearInterval(interval);
-        }
-
-        // Mulai otomatis pengguliran saat halaman dimuat
-        startAutoPlay();
-
-        // Hentikan otomatis pengguliran saat mouse hover ke atas slider
-        slider.addEventListener("mouseenter", stopAutoPlay);
-
-        // Lanjutkan otomatis pengguliran saat mouse meninggalkan slider
-        slider.addEventListener("mouseleave", startAutoPlay);
-
-    </script>
+    <script src="../../assets/js/main.js"></script>
 </body>
 
 </html>

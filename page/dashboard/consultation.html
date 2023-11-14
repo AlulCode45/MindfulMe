@@ -9,6 +9,70 @@
 </head>
 
 <body>
+    <div class="preloader">
+        <div class="loading">
+            <img src="../../assets/image/loading.gif" width="80">
+            <p>Harap Tunggu</p>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="close-modal">
+                <b>Konfirmasi Pembayaran</b>
+                <svg class="close" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 32 32">
+                    <path fill="currentColor"
+                        d="M16 2C8.2 2 2 8.2 2 16s6.2 14 14 14s14-6.2 14-14S23.8 2 16 2zm0 26C9.4 28 4 22.6 4 16S9.4 4 16 4s12 5.4 12 12s-5.4 12-12 12z" />
+                    <path fill="currentColor"
+                        d="M21.4 23L16 17.6L10.6 23L9 21.4l5.4-5.4L9 10.6L10.6 9l5.4 5.4L21.4 9l1.6 1.6l-5.4 5.4l5.4 5.4z" />
+                </svg>
+            </div>
+            <div class="konfirmasi-pembayaran-psikolog">
+                <p>
+                    Dengan mengklik "Bayar & Setujui," Anda dianggap telah membaca dan menyetujui semua peraturan dan
+                    syarat
+                    yang berlaku.
+                    Poin Anda akan segera dikirimkan ke psikolog Anda sebagai pembayaran untuk layanan konsultasi.
+                    Terima
+                    kasih atas
+                    kepercayaan Anda dalam menggunakan layanan kami.
+                </p>
+                <p>
+                    Jika Anda memiliki pertanyaan atau memerlukan bantuan lebih lanjut, jangan ragu untuk menghubungi
+                    tim
+                    dukungan pelanggan
+                    kami di 081234567890 atau melalui support@mindfulme.id . Kami siap membantu Anda dengan segala
+                    kebutuhan
+                    yang Anda
+                    miliki.
+                </p>
+                <p>Kami menghargai kerja sama Anda dan berharap bahwa Anda memiliki pengalaman yang bermanfaat selama
+                    sesi
+                    konsultasi
+                    dengan psikolog kami. Jika Anda membutuhkan bantuan lebih lanjut, jangan ragu untuk menghubungi kami
+                    kapan saja.
+                </p>
+                <p>Terima kasih atas kepercayaan Anda dan semoga Anda mendapatkan manfaat maksimal dari layanan kami.
+                    <br><br>
+                    <b>
+                        Hormat kami,
+                        MindfulMe Support
+                    </b>
+                </p>
+            </div>
+            <div class="total-pembayaran">
+                <b>
+                    Total Pembayaran
+                </b>
+                <b>
+                    20 MindPoint
+                </b>
+            </div>
+            <div class="bayar-psikolog">
+                <button onclick="bayarPsikolog()">Setujui & Bayar</button>
+            </div>
+        </div>
+    </div>
+
     <div class="content">
         <aside class="sidebar">
             <div class="dashboard-profile">
@@ -71,6 +135,15 @@
         </nav>
 
         <main>
+            <div class="alert alert-success" id="alert">
+                <p>Pembayaran Berhasil</p><svg width="24px" height="24px" viewBox="0 0 0.72 0.72" id="check"
+                    data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color">
+                    <path id="primary"
+                        d="M0.3 0.54a0.03 0.03 0 0 1 -0.021 -0.009l-0.15 -0.15a0.03 0.03 0 0 1 0.043 -0.043l0.129 0.129 0.249 -0.249a0.03 0.03 0 1 1 0.043 0.043l-0.27 0.27A0.03 0.03 0 0 1 0.3 0.54Z"
+                        style="fill: rgb(255, 255, 255);" />
+                </svg>
+            </div>
+
             <div class="consultation">
                 <div class="psikolog-list">
                     <div class="pencarian-psikolog">
@@ -89,7 +162,7 @@
                         <span class="psikolog-mu">
                             Psikologmu
                         </span>
-                        <a href="#" class="link-chat-psikolog">
+                        <a href="#" class="link-chat-psikolog active-psikolog">
                             <div class="psikolog-card">
                                 <img src="https://www.random-name-generator.com/images/faces/female-asia/01.jpg?ezimgfmt=rs:148x148/rscb1/ng:webp/ngcb1"
                                     alt="">
@@ -118,11 +191,41 @@
                                 </div>
                             </div>
                         </a>
+                        <a href="#" class="link-chat-psikolog active-psikolog">
+                            <div class="psikolog-card">
+                                <img src="https://www.random-name-generator.com/images/faces/male-asia/11.jpg?ezimgfmt=rs:148x148/rscb1/ng:webp/ngcb1"
+                                    alt="">
+                                <div class="psikolog-info">
+                                    <div class="psikolog-header">
+                                        <div class="psikolog-name">
+                                            Dr Reza Prayoga S.Psi
+                                        </div>
+                                        <span class="psikolog-rating">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="57.57" height="57.57"
+                                                viewBox="0 0 24 24">
+                                                <path fill="orange"
+                                                    d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
+                                            </svg>
+                                            4.5
+                                        </span>
+                                    </div>
+                                    <p class="psikolog-desc">
+                                        Psikolog berlisensi dengan kompetensi dalam konseling dan pemahaman mendalam
+                                        tentang perilaku manusia.
+                                    </p>
+                                    <div class="psikolog-akun-info">
+                                        <span>Online</span>
+                                        <small>1 jam 2 menit 20 detik</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
                         <span class="psikolog-mu">
                             Cari Psikolog Online
                         </span>
 
-                        <a href="#" class="link-chat-psikolog">
+                        <a href="#" class="link-chat-psikolog open-modal-button">
                             <div class="psikolog-card">
                                 <img src="https://www.random-name-generator.com/images/faces/female-asia/02.jpg?ezimgfmt=rs:148x148/rscb1/ng:webp/ngcb1"
                                     alt="">
@@ -153,35 +256,6 @@
                             </div>
                         </a>
 
-                        <a href="#" class="link-chat-psikolog">
-                            <div class="psikolog-card">
-                                <img src="https://www.random-name-generator.com/images/faces/male-asia/11.jpg?ezimgfmt=rs:148x148/rscb1/ng:webp/ngcb1"
-                                    alt="">
-                                <div class="psikolog-info">
-                                    <div class="psikolog-header">
-                                        <div class="psikolog-name">
-                                            Dr Reza Prayoga S.Psi
-                                        </div>
-                                        <span class="psikolog-rating">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="57.57" height="57.57"
-                                                viewBox="0 0 24 24">
-                                                <path fill="orange"
-                                                    d="m5.825 22l1.625-7.025L2 10.25l7.2-.625L12 3l2.8 6.625l7.2.625l-5.45 4.725L18.175 22L12 18.275L5.825 22Z" />
-                                            </svg>
-                                            4.5
-                                        </span>
-                                    </div>
-                                    <p class="psikolog-desc">
-                                        Psikolog berlisensi dengan kompetensi dalam konseling dan pemahaman mendalam
-                                        tentang perilaku manusia.
-                                    </p>
-                                    <div class="psikolog-akun-info">
-                                        <span>Online</span>
-                                        <div>20 <img src="../../assets/image/coin.png"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
                     </div>
 
                 </div>
@@ -311,16 +385,8 @@
         </a>
     </div>
 
-    <script>
-        var screenWidth = window.innerWidth;
-        if (screenWidth < 1024) {
-            var linkedCard = document.getElementsByClassName('link-chat-psikolog');
-            for (let i = 0; i < linkedCard.length; i++) {
-                const element = linkedCard[i];
-                element.href = './chat-consultation.html'
-            }
-        }
-    </script>
+    <script src="../../assets/js/alert.js"></script>
+    <script src="../../assets/js/main.js"></script>
 </body>
 
 </html>
