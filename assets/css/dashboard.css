@@ -1450,6 +1450,28 @@ textarea {
     margin-top: 10px;
 }
 
+.hasil-tes-kesehatan {
+    margin-top: 20px;
+    margin-bottom: 100px;
+    background-color: white;
+    text-align: center;
+}
+
+.hasil-tes-kesehatan h1 {
+    font-size: 35px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.hasil-tes-kesehatan img {
+    width: 100%;
+}
+
+.hasil-tes-kesehatan p {
+    padding: 30px;
+}
+
+
 @media (min-width:768px) {
     .slider-container {
         margin-top: 20px;
