@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard | MindfulMe</title>
-    <link rel="stylesheet" href="../../assets/css/dashboard.css">
+    <link rel="stylesheet" href="../../../assets/css/dashboard.css">
+
 </head>
 
 <body>
     <div class="preloader">
         <div class="loading">
-            <img src="../../assets/image/loading.gif" width="80">
+            <img src="../../../assets/image/loading.gif" width="80">
             <p>Harap Tunggu</p>
         </div>
     </div>
@@ -20,7 +21,7 @@
         <aside class="sidebar">
             <div class="dashboard-profile">
                 <a href="./profile.html">
-                    <img src="../../assets/image/user/Image-60.png" alt="">
+                    <img src="../../../assets/image/user/Image-60.png" alt="">
                 </a>
             </div>
             <div class="sidebar-menu">
@@ -59,7 +60,7 @@
                     </svg>
                 </a>
             </div>
-            <a href="../auth/login.html">
+            <a href="../../auth/login.html">
                 <svg xmlns="http://www.w3.org/2000/svg" width="57.57" height="57.57" viewBox="0 0 24 24" class="keluar">
                     <path fill="white"
                         d="M6 2h9a2 2 0 0 1 2 2v1a1 1 0 0 1-2 0V4H6v16h9v-1a1 1 0 0 1 2 0v1a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z" />
@@ -69,20 +70,38 @@
             </a>
         </aside>
         <nav>
-            <img src="../../assets/image/icon.png" class="nav-icon" alt="">
+            <img src="../../../assets/image/icon.png" class="nav-icon" alt="">
             <div class="profile">
                 <a href="./profile.html">
-                    <img src="../../assets/image/user/Image-60.png" alt="">
+                    <img src="../../../assets/image/user/Image-60.png" alt="">
                 </a>
             </div>
         </nav>
 
         <main>
-            <div class="slider-container">
-                <div class="slider" id="slider">
-                    <img src="../../assets/image/banners/banner1.png" class="banners slide slide1" alt="">
-                    <img src="../../assets/image/banners/banner2.png" class="banners slide slide1" alt="">
+            <div class="slider">
+                <div class="slide">
+                    <picture>
+                        <source srcset="../../../assets/image/banners/banner1-dekstop.jpg" media="(min-width:1024px)">
+                        <source srcset="../../../assets/image/banners/banner1-tablet.jpg" media="(min-width:768px)">
+                        <img src="../../../assets/image/banners/banner1-mobile.jpg" alt="">
+                    </picture>
                 </div>
+                <div class="slide">
+                    <picture>
+                        <source srcset="../../../assets/image/banners/banner2.png" media="(min-width:1024px)">
+                        <source srcset="../../../assets/image/banners/banner2.png" media="(min-width:768px)">
+                        <img src="../../../assets/image/banners/banner2.png" alt="">
+                    </picture>
+                </div>
+
+                <button class="btn-slide prev"><i class="fas fa-3x fa-chevron-circle-left"></i></button>
+                <button class="btn-slide next"><i class="fas fa-3x fa-chevron-circle-right"></i></button>
+
+            </div>
+            <div class="dots-container">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
             </div>
 
             <div class="dashboard-header">
@@ -131,7 +150,7 @@
                 <div class="row-artikel">
                     <a href="./view-artikel.html">
                         <div class="card">
-                            <img src="../../assets/image/artikel/artikel1.png" alt="" class="card-header">
+                            <img src="../../../assets/image/artikel/artikel1.png" alt="" class="card-header">
                             <span class="date">
                                 Muhammad Khoyron AF • Oct 12, 2023
                             </span>
@@ -145,7 +164,7 @@
                     </a>
                     <a href="./view-artikel.html">
                         <div class="card">
-                            <img src="../../assets/image/artikel/artikel2.png" alt="" class="card-header">
+                            <img src="../../../assets/image/artikel/artikel2.png" alt="" class="card-header">
                             <span class="date">
                                 Muhammad Khoyron AF • Oct 12, 2023
                             </span>
@@ -158,7 +177,7 @@
                     </a>
                     <a href="./view-artikel.html">
                         <div class="card">
-                            <img src="../../assets/image/artikel/artikel3.png" alt="" class="card-header">
+                            <img src="../../../assets/image/artikel/artikel3.png" alt="" class="card-header">
                             <span class="date">
                                 Muhammad Khoyron AF • Oct 12, 2023
                             </span>
@@ -171,7 +190,7 @@
                     </a>
                     <a href="./view-artikel.html">
                         <div class="card">
-                            <img src="../../assets/image/artikel/artikel4.png" alt="" class="card-header">
+                            <img src="../../../assets/image/artikel/artikel4.png" alt="" class="card-header">
                             <span class="date">
                                 Muhammad Khoyron AF • Oct 12, 2023
                             </span>
@@ -185,7 +204,7 @@
                     </a>
                     <a href="./view-artikel.html">
                         <div class="card">
-                            <img src="../../assets/image/artikel/artikel5.png" alt="" class="card-header">
+                            <img src="../../../assets/image/artikel/artikel5.png" alt="" class="card-header">
                             <span class="date">
                                 Muhammad Khoyron AF • Oct 12, 2023
                             </span>
@@ -200,7 +219,7 @@
 
                     <a href="./view-artikel.html">
                         <div class="card">
-                            <img src="../../assets/image/artikel/artikel6.png" alt="" class="card-header">
+                            <img src="../../../assets/image/artikel/artikel6.png" alt="" class="card-header">
                             <span class="date">
                                 Muhammad Khoyron AF • Oct 12, 2023
                             </span>
@@ -251,8 +270,63 @@
         </a>
     </div>
 
+    <script>
+        function Slider() {
+            const carouselSlides = document.querySelectorAll('.slide');
+            const btnPrev = document.querySelector('.prev');
+            const btnNext = document.querySelector('.next');
+            const dotsSlide = document.querySelector('.dots-container');
+            let currentSlide = 0;
 
-    <script src="../../assets/js/main.js"></script>
+            const activeDot = function (slide) {
+                document.querySelectorAll('.dot').forEach(dot => dot.classList.remove('active'));
+                document.querySelector(`.dot[data-slide="${slide}"]`).classList.add('active');
+            };
+            activeDot(currentSlide);
+
+            const changeSlide = function (slides) {
+                carouselSlides.forEach((slide, index) => (slide.style.transform = `translateX(${100 * (index - slides)}%)`));
+            };
+            changeSlide(currentSlide);
+
+            btnNext.addEventListener('click', function () {
+                currentSlide++;
+                if (carouselSlides.length - 1 < currentSlide) {
+                    currentSlide = 0;
+                };
+                changeSlide(currentSlide);
+                activeDot(currentSlide);
+            });
+            btnPrev.addEventListener('click', function () {
+                currentSlide--;
+                if (0 >= currentSlide) {
+                    currentSlide = 0;
+                };
+                changeSlide(currentSlide);
+                activeDot(currentSlide);
+            });
+
+            dotsSlide.addEventListener('click', function (e) {
+                if (e.target.classList.contains('dot')) {
+                    const slide = e.target.dataset.slide;
+                    changeSlide(slide);
+                    activeDot(slide);
+                }
+            });
+
+            setInterval(() => {
+                currentSlide++;
+                if (carouselSlides.length - 1 < currentSlide) {
+                    currentSlide = 0;
+                };
+                changeSlide(currentSlide);
+                activeDot(currentSlide);
+            }, 3000)
+        };
+        Slider();
+
+    </script>
+    <script src="../../../assets/js/main.js"></script>
 </body>
 
 </html>

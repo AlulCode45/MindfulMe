@@ -157,31 +157,6 @@ nav {
     display: none;
 }
 
-.banners {
-    width: 100%;
-    max-width: 100%;
-}
-
-.slider-container {
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-    overflow: hidden;
-}
-
-.slider {
-    display: flex;
-    transition: 0.5s;
-    width: 100%;
-}
-
-.slide {
-    width: 100%;
-    height: auto;
-    /* Biarkan tinggi gambar menyesuaikan proporsi gambar */
-    box-sizing: content-box;
-}
-
 .cari-artikel {
     margin-top: 6px;
 }
@@ -1455,8 +1430,6 @@ textarea {
     margin-bottom: 100px;
     background-color: white;
     text-align: center;
-    height: auto !important;
-    box-sizing: border-box;
 }
 
 .hasil-tes-kesehatan h1 {
@@ -1470,26 +1443,94 @@ textarea {
 }
 
 .hasil-tes-kesehatan p {
-    padding: 30px 30px 20px 30px;
+    padding: 30px;
 }
 
-.hasil-tes-kesehatan button {
-    background-color: #1C7892;
-    border-radius: 10px;
-    padding: 15px;
-    color: white;
-    width: 150px;
-
-    color: #FFF;
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-bottom: 20px;
+.slider {
+    position: relative;
+    height: 230px;
+    margin: 20px auto;
+    overflow: hidden;
 }
 
+.slide {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 1s;
+}
+
+.slide picture {
+    width: 100%;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+button .fas {
+    color: rgba(255, 255, 255, .5);
+}
+
+.btn-slide {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+
+    height: 5.5rem;
+    width: 5.5rem;
+    cursor: pointer;
+}
+
+.prev {
+    left: 3rem;
+    transform: translate(-50%, -50%);
+}
+
+.next {
+    right: 3rem;
+    transform: translate(50%, -50%);
+}
+
+.dots-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.dot {
+    width: 25px;
+    height: 5px;
+    margin: 15px 5px;
+    border-radius: .5rem;
+    background: rgba(39, 39, 39, .5);
+    cursor: pointer;
+}
+
+.dot.active {
+    background: #272727;
+}
 
 @media (min-width:768px) {
+
+    .slider,
+    .slide {
+        height: 280px;
+    }
+
     .slider-container {
         margin-top: 20px;
     }

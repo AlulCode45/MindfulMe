@@ -9,6 +9,13 @@
 </head>
 
 <body>
+    <div class="alert alert-error" id="alert">
+        <p>Email / Password Salah</p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256">
+            <path fill="white"
+                d="M205.66 194.34a8 8 0 0 1-11.32 11.32L128 139.31l-66.34 66.35a8 8 0 0 1-11.32-11.32L116.69 128L50.34 61.66a8 8 0 0 1 11.32-11.32L128 116.69l66.34-66.35a8 8 0 0 1 11.32 11.32L139.31 128Z" />
+        </svg>
+    </div>
     <div class="login-page">
         <div class="login-photo">
         </div>
@@ -23,18 +30,36 @@
                 </p>
                 <div class="form-group">
                     <label for="">Email</label>
-                    <input type="email" name="email" class="input" id="" placeholder="Masukan Email">
+                    <input type="email" class="input" id="email" placeholder="Masukan Email">
                 </div>
                 <div class="form-group">
                     <label for="">Password</label>
-                    <input type="password" name="password" class="input" id="" placeholder="Masukan Password">
+                    <input type="password" class="input" id="password" placeholder="Masukan Password">
                 </div>
-                <a href="/page/dashboard/index.html">
-                    <button type="button" class="button-login">Masuk</button>
-                </a>
+
+                <button type="button" class="button-login" onclick="login()">Masuk</button>
             </form>
         </div>
     </div>
+    <script>
+        function login() {
+            email = document.getElementById('email').value;
+            password = document.getElementById('password').value;
+
+            if (email == "user@gmail.com" && password == "user") {
+                window.location.href = "../dashboard/pengguna";
+            } else if (email == "admin@gmail.com" && password == "admin") {
+                window.location.href = "../dashboard/admin";
+            } else if (email == "psikolog@gmail.com" && password == "psikolog") {
+                window.location.href = "../dashboard/psikolog";
+            } else {
+                showAlert()
+            }
+        }
+
+    </script>
+    <script src="../../assets/js/alert.js"></script>
+
     <script src="../../assets/js/main.js"></script>
 </body>
 

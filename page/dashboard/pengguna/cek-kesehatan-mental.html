@@ -4,22 +4,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hasil Tes Mental | MindfulMe</title>
-    <link rel="stylesheet" href="../../assets/css/dashboard.css">
+    <title>Cek Kesehatan | MindfulMe</title>
+    <link rel="stylesheet" href="../../../assets/css/dashboard.css">
 </head>
 
 <body>
     <div class="preloader">
         <div class="loading">
-            <img src="../../assets/image/loading.gif" width="80">
+            <img src="../../../assets/image/loading.gif" width="80">
             <p>Harap Tunggu</p>
         </div>
     </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="close-modal">
+                <b>Panduan Tes Kesehatan</b>
+                <svg class="close" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 32 32">
+                    <path fill="currentColor"
+                        d="M16 2C8.2 2 2 8.2 2 16s6.2 14 14 14s14-6.2 14-14S23.8 2 16 2zm0 26C9.4 28 4 22.6 4 16S9.4 4 16 4s12 5.4 12 12s-5.4 12-12 12z" />
+                    <path fill="currentColor"
+                        d="M21.4 23L16 17.6L10.6 23L9 21.4l5.4-5.4L9 10.6L10.6 9l5.4 5.4L21.4 9l1.6 1.6l-5.4 5.4l5.4 5.4z" />
+                </svg>
+            </div>
+            <form>
+                <p>Selamat datang di Tes Tingkat Kecemasan. Untuk mendapatkan informasi yang akurat, harap jawab
+                    pertanyaan-pertanyaan berikut dengan jujur dan sejujur-jujurnya. Tidak ada jawaban yang benar atau
+                    salah, ini
+                    hanya untuk membantu menilai tingkat kecemasan Anda. Setelah selesai, Anda akan menerima hasil yang
+                    dapat
+                    memberikan wawasan mengenai kesehatan mental Anda. Terima kasih atas partisipasinya.</p>
+                <br>
+                <p><strong>Instruksi:</strong></p>
+                <ol>
+                    <li>Baca setiap pernyataan dengan cermat.</li>
+                    <li>Pilih jawaban yang paling sesuai dengan pengalaman dan perasaan Anda.</li>
+                    <li>Pilih satu jawaban untuk setiap pernyataan.</li>
+                </ol>
+                <br>
+                <p><strong>Skala penilaian:</strong></p>
+                <ul>
+                    <li>1: Sering</li>
+                    <li>2: Banget</li>
+                    <li>3: Tidak Pernah</li>
+                    <li>4: Banyak</li>
+                </ul>
+                <br>
+                <p>Ingat, tujuan tes ini adalah untuk memberikan gambaran umum, dan hasil tidak menggantikan saran
+                    profesional. Jika
+                    Anda memiliki kekhawatiran serius tentang kesehatan mental Anda, segera hubungi tenaga kesehatan
+                    atau
+                    profesional yang bersertifikasi melalaui platform kami.</p>
+            </form>
+        </div>
+    </div>
+
     <div class="content">
         <aside class="sidebar">
             <div class="dashboard-profile">
                 <a href="./profile.html">
-                    <img src="../../assets/image/user/Image-60.png" alt="">
+                    <img src="../../../assets/image/user/Image-60.png" alt="">
                 </a>
             </div>
             <div class="sidebar-menu">
@@ -58,7 +101,7 @@
                     </svg>
                 </a>
             </div>
-            <a href="../auth/login.html">
+            <a href="../../auth/login.html">
                 <svg xmlns="http://www.w3.org/2000/svg" width="57.57" height="57.57" viewBox="0 0 24 24" class="keluar">
                     <path fill="white"
                         d="M6 2h9a2 2 0 0 1 2 2v1a1 1 0 0 1-2 0V4H6v16h9v-1a1 1 0 0 1 2 0v1a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z" />
@@ -68,35 +111,32 @@
             </a>
         </aside>
         <nav>
-            <img src="../../assets/image/icon.png" class="nav-icon" alt="">
+            <img src="../../../assets/image/icon.png" class="nav-icon" alt="">
             <div class="profile">
                 <a href="./profile.html">
-                    <img src="../../assets/image/user/Image-60.png" alt="">
+                    <img src="../../../assets/image/user/Image-60.png" alt="">
                 </a>
             </div>
         </nav>
 
         <main>
-            <div class="hasil-tes-kesehatan">
-                <h1>Skor Kecemasan Kamu : 76</h1>
+            <div class="tes-kesehatan">
                 <div class="ilustration">
-                    <img src="../../assets/image/soal-kesehatan.png" alt="">
+                    <img src="../../../assets/image/tes-kesehatan.png" alt="">
                 </div>
+                <h1>Tes Kesehatan : Mengenal diri lebih dalam</h1>
                 <p>
-                    Skor kecemasan 76 bisa terasa seperti beban yang berat, tapi jangan biarkan angka itu meruntuhkan
-                    semangatmu. Kecemasan
-                    adalah tantangan yang bisa kita hadapi. Ingatlah bahwa kamu tidak sendirian dalam perjuangan ini.
-                    Ada dukungan dari
-                    orang-orang yang peduli dan sumber daya yang dapat membantu. Perlu kesabaran dan upaya, tetapi
-                    perlahan-lahan, kita bisa
-                    mengatasi kecemasan ini. Jangan biarkan skor itu mendefinisikan dirimu, melainkan gunakan sebagai
-                    titik awal untuk
-                    membangun kekuatan dan ketahanan mentalmu. Kecemasan adalah bagian dari kehidupan, tetapi itu bukan
-                    akhir dari cerita.
+                    Tes ini bisa mengukur tingkat stres dalam dirimu. Hasil dari tes ini akan
+                    sangat membantu kamu mengetahui keadaan kesehatan mentalmu saat ini.
                 </p>
-                <a href="./cek-kesehatan-mental.html">
-                    <button onclick="showAlert()">Kembali</button>
-                </a>
+                <div class="button-aksi">
+                    <div class="">
+                        <a href="./pertanyaan-kesehatan.html">
+                            <button class="mulai-tes">Mulai Tes</button>
+                        </a>
+                        <button class="panduan-tes open-modal-button">Panduan Tes Kesehatan</button>
+                    </div>
+                </div>
             </div>
         </main>
     </div>
@@ -133,7 +173,7 @@
         </a>
     </div>
 
-    <script src="../../assets/js/main.js"></script>
+    <script src="../../../assets/js/main.js"></script>
 </body>
 
 </html>

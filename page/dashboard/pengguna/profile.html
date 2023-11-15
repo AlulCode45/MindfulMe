@@ -4,52 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TopUp MindPoint| MindfulMe</title>
-    <link rel="stylesheet" href="../../assets/css/dashboard.css">
+    <title>Profile | MindfulMe</title>
+    <link rel="stylesheet" href="../../../assets/css/dashboard.css">
 </head>
 
 <body>
     <div class="preloader">
         <div class="loading">
-            <img src="../../assets/image/loading.gif" width="80">
+            <img src="../../../assets/image/loading.gif" width="80">
             <p>Harap Tunggu</p>
         </div>
     </div>
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <div class="close-modal">
-                <b>Scan Untuk Membayar</b>
-                <svg onclick="showAlert()" class="close" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                    viewBox="0 0 32 32">
-                    <path fill="currentColor"
-                        d="M16 2C8.2 2 2 8.2 2 16s6.2 14 14 14s14-6.2 14-14S23.8 2 16 2zm0 26C9.4 28 4 22.6 4 16S9.4 4 16 4s12 5.4 12 12s-5.4 12-12 12z" />
-                    <path fill="currentColor"
-                        d="M21.4 23L16 17.6L10.6 23L9 21.4l5.4-5.4L9 10.6L10.6 9l5.4 5.4L21.4 9l1.6 1.6l-5.4 5.4l5.4 5.4z" />
-                </svg>
-            </div>
-            <div class="scan-to-buy">
-                <div class="content-buy">
-                    <img src="../../assets/image/qrcode.png" alt="">
-                </div>
-                <ol>
-                    <li>1. Buka Aplikasi Dana</li>
-                    <li>2. Pilih Menu Kirim</li>
-                    <li>3. Pilih Pembayaran dengan QR Code</li>
-                    <li>4. Pindai QR Code</li>
-                    <li>5. Verifikasi Informasi Pembayaran</li>
-                    <li>6. Konfirmasi Pembayaran</li>
-                    <li>7. Tunggu Konfirmasi</li>
-                    <li>7. Simpan Bukti Pembayaran</li>
-                </ol>
-            </div>
-        </div>
-    </div>
-
     <div class="content">
         <aside class="sidebar">
             <div class="dashboard-profile">
                 <a href="./profile.html">
-                    <img src="../../assets/image/user/Image-60.png" alt="">
+                    <img src="../../../assets/image/user/Image-60.png" alt="">
                 </a>
             </div>
             <div class="sidebar-menu">
@@ -88,7 +58,7 @@
                     </svg>
                 </a>
             </div>
-            <a href="../auth/login.html">
+            <a href="../../auth/login.html">
                 <svg xmlns="http://www.w3.org/2000/svg" width="57.57" height="57.57" viewBox="0 0 24 24" class="keluar">
                     <path fill="white"
                         d="M6 2h9a2 2 0 0 1 2 2v1a1 1 0 0 1-2 0V4H6v16h9v-1a1 1 0 0 1 2 0v1a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z" />
@@ -98,89 +68,96 @@
             </a>
         </aside>
         <nav>
-            <img src="../../assets/image/icon.png" class="nav-icon" alt="">
+            <img src="../../../assets/image/icon.png" class="nav-icon" alt="">
             <div class="profile">
                 <a href="./profile.html">
-                    <img src="../../assets/image/user/Image-60.png" alt="">
+                    <img src="../../../assets/image/user/Image-60.png" alt="">
                 </a>
             </div>
         </nav>
 
         <main>
-            <div class="alert alert-success" id="alert">
-                <p>Pembayaran Berhasil</p><svg width="24px" height="24px" viewBox="0 0 0.72 0.72" id="check"
-                    data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color">
-                    <path id="primary"
-                        d="M0.3 0.54a0.03 0.03 0 0 1 -0.021 -0.009l-0.15 -0.15a0.03 0.03 0 0 1 0.043 -0.043l0.129 0.129 0.249 -0.249a0.03 0.03 0 1 1 0.043 0.043l-0.27 0.27A0.03 0.03 0 0 1 0.3 0.54Z"
-                        style="fill: rgb(255, 255, 255);" />
-                </svg>
-            </div>
-
-            <div class="topup">
-                <h1>Top Up MindPoint</h1>
-                <b class="text-topup">Masukan Jumlah Saldo</b>
-                <div class="nominal-mindpoint">
-                    <div class="nominal" onclick="pilihNominal(this)">
-                        <div class="harga">
-                            <span>20 Point</span>
-                            <b>RP 70.000</b>
-                        </div>
-                        <img src="../../assets/image/coin.png" alt="">
+            <div class="profile-page">
+                <div class="profile-user">
+                    <a href="./profile.html">
+                        <img src="../../../assets/image/user/Image-60.png" alt="">
+                    </a>
+                    <div class="profile-user-content">
+                        <h1>Muhammad Gilang Ramadhan</h1>
+                        <p>
+                            Saya adalah seseorang yang hidup dengan kebutuhan khusus terkait mental sering depresi dan
+                            cemas.
+                        </p>
+                        <a href="topup.html">
+                            <div class="saldo">
+                                <b>50 POIN</b>
+                                <img src="../../../assets/image/coin.png">
+                            </div>
+                        </a>
                     </div>
-                    <div class="nominal" onclick="pilihNominal(this)">
-                        <div class="harga">
-                            <span>40 Point</span>
-                            <b>RP 70.000</b>
-                        </div>
-                        <img src="../../assets/image/coin.png" alt="">
+                    <a href="./edit-profile.html">
+                        <button class="edit-profile">
+                            Edit Profile
+                        </button>
+                    </a>
+                </div>
+                <div class="user-info">
+                    <div class="informasi-akun">
+                        <h2>Informasi Akun</h2>
+                        <p><b>Email</b> : gilang-sehat@gmail.com</p>
+                        <p><b>No Whatsapp</b> : +62812356789</p>
+                        <p><b>Alamat</b> : Jl. Mawar Indah No. 123
+                            Kelurahan Bunga Sejahtera
+                            Kota Harapan Mulia
+                            Provinsi Kehidupan Bahagia
+                        </p>
                     </div>
-                    <div class="nominal" onclick="pilihNominal(this)">
-                        <div class="harga">
-                            <span>60 Point</span>
-                            <b>RP 70.000</b>
+                    <div class="topik-dibuat">
+                        <h2>Topik Dibuat</h2>
+                        <div class="topik">
+                            <div class="topik-creator">
+                                <img src="../../../assets/image/user/Image-60.png" width="40" height="40" alt="">
+                                <span>Muhammad Gilang Ramadhan</span>
+                                <span class="category stress">Stress</span>
+                                <span class="category curhat">Curhat</span>
+                            </div>
+                            <div class="judul-topik">
+                                <h1>Tips menghindari stres berlebihan ala gue.</h1>
+                            </div>
+                            <div class="isi-topik">
+                                <p>Siapa yang sering stres? merapat!</p>
+                            </div>
+                            <div class="footer-topik">
+                                <span>
+                                    30 September 2023 · 30k views
+                                </span>
+                                <div class="topik-action">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            viewBox="0 0 1792 1536">
+                                            <path fill="#b4b4b4"
+                                                d="M1792 640q0 174-120 321.5t-326 233t-450 85.5q-70 0-145-8q-198 175-460 242q-49 14-114 22q-17 2-30.5-9t-17.5-29v-1q-3-4-.5-12t2-10t4.5-9.5l6-9l7-8.5l8-9q7-8 31-34.5t34.5-38t31-39.5t32.5-51t27-59t26-76q-157-89-247.5-220T0 640q0-130 71-248.5T262 187T548 50.5T896 0q244 0 450 85.5t326 233T1792 640z" />
+                                        </svg> 2k+
+                                    </span>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34"
+                                            viewBox="0 0 24 24">
+                                            <path fill="#ff3a3a"
+                                                d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53L12 21.35Z" />
+                                        </svg> 25k
+                                    </span>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38"
+                                            viewBox="0 0 24 24">
+                                            <path fill="#4690ff"
+                                                d="M5 21V5q0-.825.588-1.413T7 3h10q.825 0 1.413.588T19 5v16l-7-3l-7 3Z" />
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
                         </div>
-                        <img src="../../assets/image/coin.png" alt="">
-                    </div>
-                    <div class="nominal" onclick="pilihNominal(this)">
-                        <div class="harga">
-                            <span>80 Point</span>
-                            <b>RP 70.000</b>
-                        </div>
-                        <img src="../../assets/image/coin.png" alt="">
-                    </div>
-                    <div class="nominal" onclick="pilihNominal(this)">
-                        <div class="harga">
-                            <span>100 Point</span>
-                            <b>RP 70.000</b>
-                        </div>
-                        <img src="../../assets/image/coin.png" alt="">
-                    </div>
-                    <div class="nominal" onclick="pilihNominal(this)">
-                        <div class="harga">
-                            <span>120 Point</span>
-                            <b>RP 70.000</b>
-                        </div>
-                        <img src="../../assets/image/coin.png" alt="">
                     </div>
                 </div>
-
-                <b class="text-topup">Metode Pembayaran</b>
-                <div class="metode-pembayaran">
-                    <div class="pembayaran" onclick="pilihPembayaran(this)">
-                        <img src="../../assets/image/LOGO-GOPAY.png" alt="" class="bayar-gopay">
-                    </div>
-                    <div class="pembayaran" onclick="pilihPembayaran(this)">
-                        <img src="../../assets/image/Logo_dana_blue.png" alt="" class="bayar-dana">
-                    </div>
-                    <div class="pembayaran" onclick="pilihPembayaran(this)">
-                        <img src="../../assets/image/quick-response-code-indonesia-standard-qris.png" alt=""
-                            class="bayar-qris">
-                    </div>
-                </div>
-
-                <button class="bayar-pembayaran open-modal-button">
-                    Bayar Sekarang
-                </button>
             </div>
         </main>
     </div>
@@ -217,8 +194,7 @@
         </a>
     </div>
 
-    <script src="../../assets/js/alert.js"></script>
-    <script src="../../assets/js/main.js"></script>
+    <script src="../../../assets/js/main.js"></script>
 </body>
 
 </html>

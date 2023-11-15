@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
     var preloader = document.querySelector(".preloader");
-    preloader.style.display = "none";
+
+    if (preloader) {
+        preloader.style.display = "none";
+    }
 });
 
 var comments = document.getElementsByClassName('comment');
@@ -19,43 +22,6 @@ for (var i = 0; i < comments.length; i++) {
     })(i);
 }
 
-const slider = document.getElementById("slider");
-let slideIndex = 0;
-let interval;
-
-function showSlide(index) {
-    if (index < 0) {
-        slideIndex = slider.children.length - 1;
-    } else if (index >= slider.children.length) {
-        slideIndex = 0;
-    }
-    slider.style.transform = `translateX(-${slideIndex * 100}%)`;
-}
-
-function nextSlide() {
-    slideIndex++;
-    showSlide(slideIndex);
-}
-
-function prevSlide() {
-    slideIndex--;
-    showSlide(slideIndex);
-}
-
-function startAutoPlay() {
-    interval = setInterval(nextSlide, 3000);
-}
-
-function stopAutoPlay() {
-    clearInterval(interval);
-}
-
-if (slider) {
-    startAutoPlay();
-
-    slider.addEventListener("mouseenter", stopAutoPlay);
-    slider.addEventListener("mouseleave", startAutoPlay);
-}
 
 var screenWidth = window.innerWidth;
 

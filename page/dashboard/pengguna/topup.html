@@ -4,22 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laporan Kesehatan | MindfulMe</title>
-    <link rel="stylesheet" href="../../assets/css/dashboard.css">
+    <title>TopUp MindPoint| MindfulMe</title>
+    <link rel="stylesheet" href="../../../assets/css/dashboard.css">
 </head>
 
 <body>
     <div class="preloader">
         <div class="loading">
-            <img src="../../assets/image/loading.gif" width="80">
+            <img src="../../../assets/image/loading.gif" width="80">
             <p>Harap Tunggu</p>
         </div>
     </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="close-modal">
+                <b>Scan Untuk Membayar</b>
+                <svg onclick="showAlert()" class="close" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                    viewBox="0 0 32 32">
+                    <path fill="currentColor"
+                        d="M16 2C8.2 2 2 8.2 2 16s6.2 14 14 14s14-6.2 14-14S23.8 2 16 2zm0 26C9.4 28 4 22.6 4 16S9.4 4 16 4s12 5.4 12 12s-5.4 12-12 12z" />
+                    <path fill="currentColor"
+                        d="M21.4 23L16 17.6L10.6 23L9 21.4l5.4-5.4L9 10.6L10.6 9l5.4 5.4L21.4 9l1.6 1.6l-5.4 5.4l5.4 5.4z" />
+                </svg>
+            </div>
+            <div class="scan-to-buy">
+                <div class="content-buy">
+                    <img src="../../../assets/image/qrcode.png" alt="">
+                </div>
+                <ol>
+                    <li>1. Buka Aplikasi Dana</li>
+                    <li>2. Pilih Menu Kirim</li>
+                    <li>3. Pilih Pembayaran dengan QR Code</li>
+                    <li>4. Pindai QR Code</li>
+                    <li>5. Verifikasi Informasi Pembayaran</li>
+                    <li>6. Konfirmasi Pembayaran</li>
+                    <li>7. Tunggu Konfirmasi</li>
+                    <li>7. Simpan Bukti Pembayaran</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
     <div class="content">
         <aside class="sidebar">
             <div class="dashboard-profile">
                 <a href="./profile.html">
-                    <img src="../../assets/image/user/Image-60.png" alt="">
+                    <img src="../../../assets/image/user/Image-60.png" alt="">
                 </a>
             </div>
             <div class="sidebar-menu">
@@ -58,7 +88,7 @@
                     </svg>
                 </a>
             </div>
-            <a href="../auth/login.html">
+            <a href="../../auth/login.html">
                 <svg xmlns="http://www.w3.org/2000/svg" width="57.57" height="57.57" viewBox="0 0 24 24" class="keluar">
                     <path fill="white"
                         d="M6 2h9a2 2 0 0 1 2 2v1a1 1 0 0 1-2 0V4H6v16h9v-1a1 1 0 0 1 2 0v1a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z" />
@@ -68,73 +98,89 @@
             </a>
         </aside>
         <nav>
-            <img src="../../assets/image/icon.png" class="nav-icon" alt="">
+            <img src="../../../assets/image/icon.png" class="nav-icon" alt="">
             <div class="profile">
                 <a href="./profile.html">
-                    <img src="../../assets/image/user/Image-60.png" alt="">
+                    <img src="../../../assets/image/user/Image-60.png" alt="">
                 </a>
             </div>
         </nav>
 
         <main>
             <div class="alert alert-success" id="alert">
-                <p>Download Berhasil</p>
-                <svg width="24px" height="24px" viewBox="0 0 0.72 0.72" id="check" data-name="Flat Color"
-                    xmlns="http://www.w3.org/2000/svg" class="icon flat-color">
+                <p>Pembayaran Berhasil</p><svg width="24px" height="24px" viewBox="0 0 0.72 0.72" id="check"
+                    data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color">
                     <path id="primary"
                         d="M0.3 0.54a0.03 0.03 0 0 1 -0.021 -0.009l-0.15 -0.15a0.03 0.03 0 0 1 0.043 -0.043l0.129 0.129 0.249 -0.249a0.03 0.03 0 1 1 0.043 0.043l-0.27 0.27A0.03 0.03 0 0 1 0.3 0.54Z"
                         style="fill: rgb(255, 255, 255);" />
                 </svg>
             </div>
-            <div class="laporan-kesehatan">
-                <h1>Laporan Data Kesehatan Mental</h1>
-                <p>
-                    Laporan data kesehatan mental adalah hasil rekap data skor kesehatan yang dikumpulkan melalui
-                    pertanyaan
-                    yang
-                    kamu jawab di cek kesehatan mental. <b>Rutinlah untuk mengecek kesehatan mental untuk mendapatkan
-                        hasil progressmu !</b>
-                </p>
-                <div class="table">
-                    <div class="row header blue">
-                        <div class="cell" data-title="No">No</div>
-                        <div class="cell" data-title="Bulan">Bulan</div>
-                        <div class="cell" data-title="Tanggal">Tanggal</div>
-                        <div class="cell" data-title="Skor Kesehatan">Skor Kesehatan</div>
-                    </div>
 
-                    <div class="row">
-                        <div class="cell" data-title="No">1</div>
-                        <div class="cell" data-title="Bulan">Januari</div>
-                        <div class="cell" data-title="Tanggal">10/01/2023</div>
-                        <div class="cell" data-title="Skor Kesehatan"><b>30 poin</b></div>
+            <div class="topup">
+                <h1>Top Up MindPoint</h1>
+                <b class="text-topup">Masukan Jumlah Saldo</b>
+                <div class="nominal-mindpoint">
+                    <div class="nominal" onclick="pilihNominal(this)">
+                        <div class="harga">
+                            <span>20 Point</span>
+                            <b>RP 70.000</b>
+                        </div>
+                        <img src="../../../assets/image/coin.png" alt="">
                     </div>
-
-                    <div class="row">
-                        <div class="cell" data-title="No">2</div>
-                        <div class="cell" data-title="Bulan">Februari</div>
-                        <div class="cell" data-title="Tanggal">15/02/2023</div>
-                        <div class="cell" data-title="Skor Kesehatan"><b>40 poin</b></div>
+                    <div class="nominal" onclick="pilihNominal(this)">
+                        <div class="harga">
+                            <span>40 Point</span>
+                            <b>RP 70.000</b>
+                        </div>
+                        <img src="../../../assets/image/coin.png" alt="">
                     </div>
-
-                    <div class="row">
-                        <div class="cell" data-title="No">3</div>
-                        <div class="cell" data-title="Bulan">Maret</div>
-                        <div class="cell" data-title="Tanggal">20/03/2023</div>
-                        <div class="cell" data-title="Skor Kesehatan"><b>35 poin</b></div>
+                    <div class="nominal" onclick="pilihNominal(this)">
+                        <div class="harga">
+                            <span>60 Point</span>
+                            <b>RP 70.000</b>
+                        </div>
+                        <img src="../../../assets/image/coin.png" alt="">
                     </div>
-
-                    <div class="row">
-                        <div class="cell" data-title="No">4</div>
-                        <div class="cell" data-title="Bulan">April</div>
-                        <div class="cell" data-title="Tanggal">18/04/2023</div>
-                        <div class="cell" data-title="Skor Kesehatan"><b>50 poin</b></div>
+                    <div class="nominal" onclick="pilihNominal(this)">
+                        <div class="harga">
+                            <span>80 Point</span>
+                            <b>RP 70.000</b>
+                        </div>
+                        <img src="../../../assets/image/coin.png" alt="">
+                    </div>
+                    <div class="nominal" onclick="pilihNominal(this)">
+                        <div class="harga">
+                            <span>100 Point</span>
+                            <b>RP 70.000</b>
+                        </div>
+                        <img src="../../../assets/image/coin.png" alt="">
+                    </div>
+                    <div class="nominal" onclick="pilihNominal(this)">
+                        <div class="harga">
+                            <span>120 Point</span>
+                            <b>RP 70.000</b>
+                        </div>
+                        <img src="../../../assets/image/coin.png" alt="">
                     </div>
                 </div>
 
-                <div class="download-button">
-                    <button onclick="showAlert()">Download</button>
+                <b class="text-topup">Metode Pembayaran</b>
+                <div class="metode-pembayaran">
+                    <div class="pembayaran" onclick="pilihPembayaran(this)">
+                        <img src="../../../assets/image/LOGO-GOPAY.png" alt="" class="bayar-gopay">
+                    </div>
+                    <div class="pembayaran" onclick="pilihPembayaran(this)">
+                        <img src="../../../assets/image/Logo_dana_blue.png" alt="" class="bayar-dana">
+                    </div>
+                    <div class="pembayaran" onclick="pilihPembayaran(this)">
+                        <img src="../../../assets/image/quick-response-code-indonesia-standard-qris.png" alt=""
+                            class="bayar-qris">
+                    </div>
                 </div>
+
+                <button class="bayar-pembayaran open-modal-button">
+                    Bayar Sekarang
+                </button>
             </div>
         </main>
     </div>
@@ -171,8 +217,8 @@
         </a>
     </div>
 
-    <script src="../../assets/js/alert.js"></script>
-    <script src="../../assets/js/main.js"></script>
+    <script src="../../../assets/js/alert.js"></script>
+    <script src="../../../assets/js/main.js"></script>
 </body>
 
 </html>

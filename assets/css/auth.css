@@ -60,7 +60,8 @@ label {
     margin-top: 10px;
 }
 
-input {
+input,
+select {
     padding-left: 10px;
     padding-right: 10px;
     height: 50px;
@@ -69,6 +70,17 @@ input {
     width: 100%;
     font-size: 15px;
     border: 1px solid var(--primary-color);
+}
+
+select option {
+    color: #333;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+select option:checked {
+    background-color: #374151 !important;
+    color: #fff;
 }
 
 .button-login {
@@ -80,6 +92,23 @@ input {
     margin-top: 30px;
     font-weight: 900;
     font-size: 17px;
+    cursor: pointer;
+}
+
+.alert {
+    position: absolute;
+    right: -250px;
+    z-index: 9999999;
+    gap: 7px;
+    align-items: center;
+    display: none;
+}
+
+.alert-error {
+    background-color: rgba(255, 39, 39, 0.6);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 @media (min-width: 768px) {
