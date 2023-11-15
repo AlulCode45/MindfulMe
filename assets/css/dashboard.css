@@ -1683,6 +1683,11 @@ button .fas {
 
 @media (min-width: 1024px) {
 
+    .slider,
+    .slide {
+        height: 430px;
+    }
+
     .dashboard-header {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
