@@ -2,7 +2,9 @@ document.addEventListener("DOMContentLoaded", function () {
     var preloader = document.querySelector(".preloader");
 
     if (preloader) {
-        preloader.style.display = "none";
+        setTimeout(() => {
+            preloader.style.display = "none";
+        }, 500)
     }
 });
 
