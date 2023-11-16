@@ -6,6 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kelola Artikel | MindfulMe</title>
     <link rel="stylesheet" href="../../../assets/css/dashboard.css">
+
+    <style>
+        #thumbnail-img {
+            width: 100%;
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        label[for="upload-file"] {
+            margin-top: 10px;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 20px;
+            outline: none;
+            border: none;
+            background-color: #F1F1F1;
+            font-size: 15px;
+        }
+    </style>
 </head>
 
 <body>
@@ -87,7 +108,7 @@
                 </svg>
             </div>
             <div class="alert alert-success" id="alert2">
-                <p>Sukses Menambahkan</p><svg width="24px" height="24px" viewBox="0 0 0.72 0.72" id="check"
+                <p>Sukses Menyimpan</p><svg width="24px" height="24px" viewBox="0 0 0.72 0.72" id="check"
                     data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color">
                     <path id="primary"
                         d="M0.3 0.54a0.03 0.03 0 0 1 -0.021 -0.009l-0.15 -0.15a0.03 0.03 0 0 1 0.043 -0.043l0.129 0.129 0.249 -0.249a0.03 0.03 0 1 1 0.043 0.043l-0.27 0.27A0.03 0.03 0 0 1 0.3 0.54Z"
@@ -96,19 +117,52 @@
             </div>
             <div class="kelola-artikel">
                 <form action="#">
+                    <div class="preview">
+                        <img id="thumbnail-img" src="../../../assets/image/artikel/artikel1.jpg">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Upload Thumbnail</label>
+                        <label for="upload-file">Upload Image</label>
+                        <input type="file" id="upload-file" accept="image/*" onchange="showPreview(event);">
+                    </div>
                     <div class="form-group">
                         <label for="">Judul</label>
-                        <input type="text" placeholder="Masukkan Judul">
+                        <input type="text" placeholder="Masukkan Judul"
+                            value="Depresi Dalam Remaja: Tanda-tanda dan Solusi">
                     </div>
                     <div class="form-group">
                         <label for="">Isi</label>
-                        <textarea type="text" placeholder="Masukkan Isi Artikel" rows="10"></textarea>
+                        <textarea type="text" placeholder="Masukkan Isi Artikel" rows="10">
+Depresi Dalam Remaja: Tanda-tanda dan Solusi
+                                
+Depresi pada remaja merupakan masalah serius yang dapat mempengaruhi kesejahteraan mental dan fisik mereka. Adalah penting bagi orang tua, guru, dan teman-teman untuk memahami tanda-tanda depresi dan mencari solusi yang tepat.
+                                
+Tanda-tanda Depresi pada Remaja
+                                
+1. Perubahan drastis dalam perilaku atau kebiasaan tidur.
+2. Hilangnya minat dalam aktivitas yang sebelumnya disukai.
+3. Perubahan berat badan atau nafsu makan.
+4. Perasaan putus asa atau tidak berharga.
+5. Kesulitan berkonsentrasi atau belajar di sekolah.
+                                
+Solusi untuk Depresi Remaja
+                                
+1. Mendengarkan dengan empati tanpa menilai.
+2. Mendorong untuk mencari bantuan profesional seperti psikolog atau psikiater.
+3. Membangun jaringan sosial yang positif.
+4. Mengajak mereka berpartisipasi dalam aktivitas yang menyenangkan.
+5. Memberikan dukungan moral dan menciptakan lingkungan yang mendukung.
+                                
+Ingatlah bahwa depresi bukanlah sesuatu yang bisa diatasi sendiri. Dukungan dari orang-orang terdekat dan perawatan yang
+tepat dapat membantu remaja keluar dari kondisi ini.
+
+                        </textarea>
                     </div>
                     <div class="form-group">
                         <label for="">Kategori</label>
                         <select name="" class="pilih-kategori">
                             <option value="">Pilih Kategori</option>
-                            <option value="Stress">Stress</option>
+                            <option value="Stress" selected>Stress</option>
                             <option value="Curhat">Curhat</option>
                             <option value="Overthinker">Overthinker</option>
                             <option value="Bullying">Bullying</option>
@@ -119,7 +173,7 @@
                         </select>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="simpan-topik" onclick="showAlert('alert2')">Tambahkan</button>
+                        <button type="button" class="simpan-topik" onclick="showAlert('alert2')">Simpan</button>
                     </div>
                 </form>
             </div>
@@ -159,7 +213,16 @@
             </svg>
         </a>
     </div>
-
+    <script>
+        function showPreview(event) {
+            if (event.target.files.length > 0) {
+                var src = URL.createObjectURL(event.target.files[0]);
+                var preview = document.getElementById("thumbnail-img");
+                preview.src = src;
+                preview.style.display = "block";
+            }
+        }
+    </script>
     <script src="../../../assets/js/alert.js"></script>
     <script src="../../../assets/js/main.js"></script>
 </body>
