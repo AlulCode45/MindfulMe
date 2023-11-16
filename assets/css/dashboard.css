@@ -1673,6 +1673,103 @@ button .fas {
     margin-bottom: 100px;
 }
 
+.saldo-option .saldo {
+    margin-top: 0px !important;
+    width: 120px !important;
+}
+
+.saldo-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.tarik-saldo {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+    width: 120px;
+}
+
+.topup input,
+.topup select {
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    outline: none;
+    border: none;
+    background-color: #F1F1F1;
+    font-size: 15px;
+}
+
+.topup .form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.jumlah-mindpoint-ditarik {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.jumlah-mindpoint-ditarik .mindpoint-persen span {
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: transparent;
+    width: 100px;
+    text-align: center;
+    border: 1px solid var(--primary-color);
+}
+
+.jumlah-mindpoint-ditarik .mindpoint-persen span:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transition: 100ms ease-in;
+
+}
+
+.mindpoint-persen {
+    display: flex;
+    gap: 10px;
+}
+
+.desc-penarikan {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.desc-penarikan span {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.desc-penarikan #total-harga span {
+    font-size: 30px;
+}
+
+#harga-mindpoint,
+#biaya-admin,
+#total-harga {
+    display: flex;
+    justify-content: space-between;
+}
+
 @media (min-width:768px) {
     .kelola-keuangan-header b {
         font-size: 18px;

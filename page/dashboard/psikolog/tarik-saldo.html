@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile | MindfulMe</title>
+    <title>TopUp MindPoint| MindfulMe</title>
     <link rel="stylesheet" href="../../../assets/css/dashboard.css">
 </head>
 
@@ -15,6 +15,7 @@
             <p>Harap Tunggu</p>
         </div>
     </div>
+
     <div class="content">
         <aside class="sidebar">
             <div class="dashboard-profile">
@@ -73,90 +74,70 @@
         </nav>
 
         <main>
-            <div class="profile-page">
-                <div class="profile-user">
-                    <a href="./profile.html">
-                        <img src="../../../assets/image/user/Image-60.png" alt="">
-                    </a>
-                    <div class="profile-user-content">
-                        <h1>Muhammad Gilang Ramadhan</h1>
-                        <p>
-                            Saya adalah seseorang yang hidup dengan kebutuhan khusus terkait mental sering depresi dan
-                            cemas.
-                        </p>
-                        <div class="saldo-option">
-                            <div class="saldo">
-                                <b>50 POIN</b>
-                                <img src="../../../assets/image/coin.png">
-                            </div>
-                            <a href="./tarik-saldo.html">
-                                <button class="tarik-saldo">Tarik Saldo</button>
-                            </a>
-                        </div>
-                    </div>
-                    <a href="./edit-profile.html">
-                        <button class="edit-profile">
-                            Edit Profile
-                        </button>
-                    </a>
-                </div>
-                <div class="user-info">
-                    <div class="informasi-akun">
-                        <h2>Informasi Akun</h2>
-                        <p><b>Email</b> : gilang-sehat@gmail.com</p>
-                        <p><b>No Whatsapp</b> : +62812356789</p>
-                        <p><b>Alamat</b> : Jl. Mawar Indah No. 123
-                            Kelurahan Bunga Sejahtera
-                            Kota Harapan Mulia
-                            Provinsi Kehidupan Bahagia
-                        </p>
-                    </div>
-                    <div class="topik-dibuat">
-                        <h2>Topik Dibuat</h2>
-                        <div class="topik">
-                            <div class="topik-creator">
-                                <img src="../../../assets/image/user/Image-60.png" width="40" height="40" alt="">
-                                <span>Muhammad Gilang Ramadhan</span>
-                                <span class="category stress">Stress</span>
-                                <span class="category curhat">Curhat</span>
-                            </div>
-                            <div class="judul-topik">
-                                <h1>Tips menghindari stres berlebihan ala gue.</h1>
-                            </div>
-                            <div class="isi-topik">
-                                <p>Siapa yang sering stres? merapat!</p>
-                            </div>
-                            <div class="footer-topik">
-                                <span>
-                                    30 September 2023 · 30k views
-                                </span>
-                                <div class="topik-action">
-                                    <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                                            viewBox="0 0 1792 1536">
-                                            <path fill="#b4b4b4"
-                                                d="M1792 640q0 174-120 321.5t-326 233t-450 85.5q-70 0-145-8q-198 175-460 242q-49 14-114 22q-17 2-30.5-9t-17.5-29v-1q-3-4-.5-12t2-10t4.5-9.5l6-9l7-8.5l8-9q7-8 31-34.5t34.5-38t31-39.5t32.5-51t27-59t26-76q-157-89-247.5-220T0 640q0-130 71-248.5T262 187T548 50.5T896 0q244 0 450 85.5t326 233T1792 640z" />
-                                        </svg> 2k+
-                                    </span>
-                                    <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34"
-                                            viewBox="0 0 24 24">
-                                            <path fill="#ff3a3a"
-                                                d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53L12 21.35Z" />
-                                        </svg> 25k
-                                    </span>
-                                    <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38"
-                                            viewBox="0 0 24 24">
-                                            <path fill="#4690ff"
-                                                d="M5 21V5q0-.825.588-1.413T7 3h10q.825 0 1.413.588T19 5v16l-7-3l-7 3Z" />
-                                        </svg>
-                                    </span>
-                                </div>
-                            </div>
+            <div class="alert alert-success" id="alert">
+                <p>Pembayaran Berhasil</p><svg width="24px" height="24px" viewBox="0 0 0.72 0.72" id="check"
+                    data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color">
+                    <path id="primary"
+                        d="M0.3 0.54a0.03 0.03 0 0 1 -0.021 -0.009l-0.15 -0.15a0.03 0.03 0 0 1 0.043 -0.043l0.129 0.129 0.249 -0.249a0.03 0.03 0 1 1 0.043 0.043l-0.27 0.27A0.03 0.03 0 0 1 0.3 0.54Z"
+                        style="fill: rgb(255, 255, 255);" />
+                </svg>
+            </div>
+
+            <div class="topup">
+                <h1>Tarik MindPoint</h1>
+                <div class="form-group">
+                    <label class="text-topup">Masukan Jumlah MindPoint</label>
+                    <input type="number" placeholder="Masukan Jumlah MindPoint">
+                    <div class="jumlah-mindpoint-ditarik">
+                        <small>Dimiliki : <b>60 MindPoint</b></small>
+                        <div class="mindpoint-persen">
+                            <span>10%</span>
+                            <span>20%</span>
+                            <span>70%</span>
+                            <span>100%</span>
                         </div>
                     </div>
                 </div>
+                <div class="form-group">
+                    <label class="text-topup">Nomor Rekening</label>
+                    <input type="number" placeholder="Masukan Nomor Rekening">
+                </div>
+                <div class="form-group">
+                    <label class="text-topup">Atas Nama</label>
+                    <input type="text" placeholder="Masukan Nama Pemilik">
+                </div>
+                <div class="form-group">
+                    <label class="text-topup">Bank</label>
+                    <select name="" id="">
+                        <option value="">Pilih Bank</option>
+                        <option value="BRI">BRI</option>
+                        <option value="BCA">BCA</option>
+                        <option value="BNI">BNI</option>
+                        <option value="Mandiri">Mandiri</option>
+                    </select>
+                </div>
+                <hr style="margin-top: 20px;margin-bottom: 20px;">
+                <div class="form-group">
+                    <div class="desc-penarikan">
+                        <div id="harga-mindpoint">
+                            <p>Harga @1 MindPoint</p>
+                            <span>Rp 3,500</span>
+                        </div>
+                        <div id="biaya-admin">
+                            <p>Biaya Admin 2%</p>
+                            <span>Rp -</span>
+                        </div>
+                        <div id="total-harga">
+                            <p>Total Harga</p>
+                            <span>Rp -</span>
+                        </div>
+                    </div>
+                </div>
+
+                <p>Penarikan MindPoint akan diproses dalam waktu 1x24 jam</p>
+                <button class="bayar-pembayaran open-modal-button">
+                    Tarik Sekarang
+                </button>
             </div>
         </main>
     </div>
@@ -193,6 +174,7 @@
         </a>
     </div>
 
+    <script src="../../../assets/js/alert.js"></script>
     <script src="../../../assets/js/main.js"></script>
 </body>
 
