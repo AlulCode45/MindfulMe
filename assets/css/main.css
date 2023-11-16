@@ -14,6 +14,10 @@ button {
     outline: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     padding: 0px;
     margin: 0px;
@@ -33,8 +37,8 @@ li {
     display: flex;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
@@ -154,7 +158,7 @@ li {
 }
 
 #tentang {
-    padding: 0px 40px 0px 40px;
+    padding: 0px 20px 0px 20px;
     margin-top: 80px;
     text-align: center;
     margin-bottom: 50px;
@@ -258,7 +262,7 @@ li {
 }
 
 #cari-psikolog {
-    padding: 0px 40px 0px 40px;
+    padding: 0px 20px 0px 20px;
     margin-top: 80px;
     margin-bottom: 50px;
     display: flex;
@@ -386,7 +390,20 @@ footer {
 }
 
 
-@media (min-width: 640px) {
+@media (min-width: 768px) {
+    .navbar {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #cari-psikolog {
+        padding: 0px 40px 0px 40px;
+    }
+
+    #tentang {
+        padding: 0px 40px 0px 40px;
+    }
+
     footer {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
