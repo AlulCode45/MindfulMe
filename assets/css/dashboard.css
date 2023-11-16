@@ -1552,6 +1552,7 @@ button .fas {
     background-color: white;
     padding: 30px;
     margin-top: 30px;
+    margin-bottom: 100px;
 }
 
 .table-aksi {
@@ -1724,6 +1725,7 @@ button .fas {
     justify-content: space-between;
     gap: 10px;
     margin-top: 10px;
+    flex-wrap: wrap;
 }
 
 .jumlah-mindpoint-ditarik .mindpoint-persen span {
@@ -1731,7 +1733,7 @@ button .fas {
     border-radius: 20px;
     padding: 5px;
     background-color: transparent;
-    width: 100px;
+    width: 70px;
     text-align: center;
     border: 1px solid var(--primary-color);
 }
@@ -1771,6 +1773,13 @@ button .fas {
 }
 
 @media (min-width:768px) {
+
+    .kelola-psikolog,
+    .kelola-artikel,
+    .kelola-keuangan {
+        margin-bottom: 50px;
+    }
+
     .kelola-keuangan-header b {
         font-size: 18px;
         margin-bottom: 10px;
@@ -1945,7 +1954,19 @@ button .fas {
     }
 }
 
+.tes-kesehatan h1 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 @media (min-width: 1024px) {
+
+    .kelola-psikolog,
+    .kelola-artikel,
+    .kelola-keuangan {
+        margin-bottom: 0px;
+    }
+
     .kelola-artikel {
         margin-bottom: 0px;
     }
