@@ -1547,7 +1547,8 @@ button .fas {
 }
 
 .kelola-psikolog,
-.kelola-artikel {
+.kelola-artikel,
+.kelola-keuangan {
     background-color: white;
     padding: 30px;
     margin-top: 30px;
@@ -1598,19 +1599,22 @@ button .fas {
 }
 
 .kelola-psikolog-header,
-.kelola-artikel-header {
+.kelola-artikel-header,
+.kelola-keuangan-header {
     display: flex;
     justify-content: space-between;
 }
 
 .kelola-psikolog-header h1,
-.kelola-artikel-header h1 {
+.kelola-artikel-header h1,
+.kelola-keuangan-header h1 {
     font-size: 25px;
     margin-bottom: 10px;
 }
 
 .kelola-psikolog-header button,
-.kelola-artikel-header button {
+.kelola-artikel-header button,
+.kelola-keuangan-header button {
     background-color: #1C7892;
     color: white;
     padding: 10px;
@@ -1647,11 +1651,38 @@ button .fas {
     font-size: 15px;
 }
 
+.kelola-keuangan-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.kelola-keuangan-header h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.kelola-keuangan-header b {
+    font-size: 17px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
 .kelola-artikel {
     margin-bottom: 100px;
 }
 
 @media (min-width:768px) {
+    .kelola-keuangan-header b {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .kelola-keuangan-header h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
 
     .slider,
     .slide {
@@ -2231,6 +2262,11 @@ button .fas {
 @media screen and (max-width: 580px) {
     .table {
         display: block;
+        overflow-y: auto;
+    }
+
+    .laporan-kesehatan .table {
+        overflow-y: hidden;
     }
 }
 
@@ -2254,25 +2290,25 @@ button .fas {
 }
 
 @media screen and (max-width: 580px) {
-    .row {
+    .laporan-kesehatan .row {
         padding: 14px 0 7px;
         display: block;
     }
 
-    .row.header {
+    .laporan-kesehatan .row.header {
         padding: 0;
         height: 6px;
     }
 
-    .row.header .cell {
+    .laporan-kesehatan .row.header .cell {
         display: none;
     }
 
-    .cell {
+    .laporan-kesehatan .cell {
         margin-bottom: 10px;
     }
 
-    .cell:before {
+    .laporan-kesehatan .cell:before {
         margin-bottom: 3px;
         content: attr(data-title);
         min-width: 98px;
@@ -2291,7 +2327,7 @@ button .fas {
 }
 
 @media screen and (max-width: 580px) {
-    .cell {
+    .laporan-kesehatan .cell {
         padding: 2px 16px;
         display: block;
     }

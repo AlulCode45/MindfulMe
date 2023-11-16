@@ -9,60 +9,6 @@
 </head>
 
 <body>
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <div class="close-modal">
-                <b>Tambah Psikolog</b>
-                <svg class="close" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 32 32">
-                    <path fill="currentColor"
-                        d="M16 2C8.2 2 2 8.2 2 16s6.2 14 14 14s14-6.2 14-14S23.8 2 16 2zm0 26C9.4 28 4 22.6 4 16S9.4 4 16 4s12 5.4 12 12s-5.4 12-12 12z" />
-                    <path fill="currentColor"
-                        d="M21.4 23L16 17.6L10.6 23L9 21.4l5.4-5.4L9 10.6L10.6 9l5.4 5.4L21.4 9l1.6 1.6l-5.4 5.4l5.4 5.4z" />
-                </svg>
-            </div>
-            <form action="#">
-                <div class="form-group">
-                    <label for="">Nama Lengkap</label>
-                    <input type="text" placeholder="Masukkan Nama Lengkap">
-                </div>
-                <div class="form-group">
-                    <label for="">Email</label>
-                    <input type="email" placeholder="Masukkan Email">
-                </div>
-                <div class="form-group">
-                    <label for="">Nomor Telepon</label>
-                    <input type="tel" placeholder="Masukkan Nomor Telepon">
-                </div>
-                <div class="form-group">
-                    <label for="">Deskripsi Psikolog</label>
-                    <textarea type="text" placeholder="Masukkan Deskripsi Psikolog"></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="">Alamat</label>
-                    <textarea type="text" placeholder="Masukkan Alamat"></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="">Jenis Kelamin</label>
-                    <select name="" id="mySelect" class="pilih-kategori">
-                        <option value="">Pilih Jenis Kelamin</option>
-                        <option value="Laki-laki">Laki-laki</option>
-                        <option value="Perempuan">Perempuan</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="">Spesialis</label>
-                    <input type="text" placeholder="Masukkan Spesialis">
-                </div>
-                <div class="form-group">
-                    <label for="">Foto</label>
-                    <input type="file">
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="simpan-topik" onclick="showAlert('alert2')">Tambahkan</button>
-                </div>
-            </form>
-        </div>
-    </div>
 
     <div class="preloader">
         <div class="loading">
@@ -148,240 +94,73 @@
                         style="fill: rgb(255, 255, 255);" />
                 </svg>
             </div>
-            <div class="kelola-psikolog">
-                <div class="kelola-psikolog-header">
-                    <h1>Kelola Psikolog</h1>
-                    <button class="tambah-psikolog open-modal-button">Tambah Psikolog</button>
+            <div class="kelola-keuangan">
+                <div class="kelola-keuangan-header">
+                    <h1>Pemasukan Pembelian Point</h1>
+                    <b>Total : Rp 5,000,000</b>
                 </div>
                 <div class="table">
                     <div class="row header blue">
                         <div class="cell" data-title="No">No</div>
                         <div class="cell" data-title="Nama">Nama</div>
-                        <div class="cell" data-title="Status">Status</div>
-                        <div class="cell" data-title="Aksi">Aksi</div>
+                        <div class="cell" data-title="Tanggal">Tanggal</div>
+                        <div class="cell" data-title="Jumlah Topup">Jumlah Topup</div>
+                        <div class="cell" data-title="Nominal">Nominal</div>
                     </div>
 
                     <div class="row">
                         <div class="cell" data-title="No">1</div>
-                        <div class="cell" data-title="Nama">Dr. Aria Novianto</div>
-                        <div class="cell" data-title="Status">Aktif</div>
-                        <div class="cell table-aksi" data-title="Aksi">
-                            <a href="" class="button-edit">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                                    <path fill="white"
-                                        d="m7 17.013l4.413-.015l9.632-9.54c.378-.378.586-.88.586-1.414s-.208-1.036-.586-1.414l-1.586-1.586c-.756-.756-2.075-.752-2.825-.003L7 12.583v4.43zM18.045 4.458l1.589 1.583l-1.597 1.582l-1.586-1.585l1.594-1.58zM9 13.417l6.03-5.973l1.586 1.586l-6.029 5.971L9 15.006v-1.589z" />
-                                    <path fill="white"
-                                        d="M5 21h14c1.103 0 2-.897 2-2v-8.668l-2 2V19H8.158c-.026 0-.053.01-.079.01c-.033 0-.066-.009-.1-.01H5V5h6.847l2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2z" />
-                                </svg>
-                            </a>
-                            <a href="#" class="button-hapus" onclick="showAlert()">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                                    <path fill="white"
-                                        d="M19 4h-3.5l-1-1h-5l-1 1H5v2h14M6 19a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7H6v12Z" />
-                                </svg>
-                            </a>
-                        </div>
+                        <div class="cell" data-title="Bulan">Muhammad Gilang Ramadhan</div>
+                        <div class="cell" data-title="Tanggal">10/01/2023</div>
+                        <div class="cell" data-title="Skor Kesehatan"><b>30 MindPoint</b></div>
+                        <div class="cell" data-title="Nominal">Rp 20,000</div>
                     </div>
 
                     <div class="row">
                         <div class="cell" data-title="No">2</div>
-                        <div class="cell" data-title="Nama">Dr. Bella Putri</div>
-                        <div class="cell" data-title="Status">Aktif</div>
-                        <div class="cell table-aksi" data-title="Aksi">
-                            <a href="" class="button-edit">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                                    <path fill="white"
-                                        d="m7 17.013l4.413-.015l9.632-9.54c.378-.378.586-.88.586-1.414s-.208-1.036-.586-1.414l-1.586-1.586c-.756-.756-2.075-.752-2.825-.003L7 12.583v4.43zM18.045 4.458l1.589 1.583l-1.597 1.582l-1.586-1.585l1.594-1.58zM9 13.417l6.03-5.973l1.586 1.586l-6.029 5.971L9 15.006v-1.589z" />
-                                    <path fill="white"
-                                        d="M5 21h14c1.103 0 2-.897 2-2v-8.668l-2 2V19H8.158c-.026 0-.053.01-.079.01c-.033 0-.066-.009-.1-.01H5V5h6.847l2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2z" />
-                                </svg>
-                            </a>
-                            <a href="#" class="button-hapus" onclick="showAlert()">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                                    <path fill="white"
-                                        d="M19 4h-3.5l-1-1h-5l-1 1H5v2h14M6 19a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7H6v12Z" />
-                                </svg>
-                            </a>
-                        </div>
+                        <div class="cell" data-title="Bulan">Budi Santoso</div>
+                        <div class="cell" data-title="Tanggal">08/20/2023</div>
+                        <div class="cell" data-title="Skor Kesehatan"><b>38 MindPoint</b></div>
+                        <div class="cell" data-title="Nominal">Rp 18,000</div>
                     </div>
 
                     <div class="row">
                         <div class="cell" data-title="No">3</div>
-                        <div class="cell" data-title="Nama">Dr. Calvin Surya</div>
-                        <div class="cell" data-title="Status">Aktif</div>
-                        <div class="cell table-aksi" data-title="Aksi">
-                            <a href="" class="button-edit">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                                    <path fill="white"
-                                        d="m7 17.013l4.413-.015l9.632-9.54c.378-.378.586-.88.586-1.414s-.208-1.036-.586-1.414l-1.586-1.586c-.756-.756-2.075-.752-2.825-.003L7 12.583v4.43zM18.045 4.458l1.589 1.583l-1.597 1.582l-1.586-1.585l1.594-1.58zM9 13.417l6.03-5.973l1.586 1.586l-6.029 5.971L9 15.006v-1.589z" />
-                                    <path fill="white"
-                                        d="M5 21h14c1.103 0 2-.897 2-2v-8.668l-2 2V19H8.158c-.026 0-.053.01-.079.01c-.033 0-.066-.009-.1-.01H5V5h6.847l2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2z" />
-                                </svg>
-                            </a>
-                            <a href="#" class="button-hapus" onclick="showAlert()">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                                    <path fill="white"
-                                        d="M19 4h-3.5l-1-1h-5l-1 1H5v2h14M6 19a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7H6v12Z" />
-                                </svg>
-                            </a>
-                        </div>
+                        <div class="cell" data-title="Bulan">Siti Rahayu</div>
+                        <div class="cell" data-title="Tanggal">06/12/2023</div>
+                        <div class="cell" data-title="Skor Kesehatan"><b>42 MindPoint</b></div>
+                        <div class="cell" data-title="Nominal">Rp 22,000</div>
                     </div>
 
                     <div class="row">
                         <div class="cell" data-title="No">4</div>
-                        <div class="cell" data-title="Nama">Dr. Dinda Rahayu</div>
-                        <div class="cell" data-title="Status">Aktif</div>
-                        <div class="cell table-aksi" data-title="Aksi">
-                            <a href="" class="button-edit">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                                    <path fill="white"
-                                        d="m7 17.013l4.413-.015l9.632-9.54c.378-.378.586-.88.586-1.414s-.208-1.036-.586-1.414l-1.586-1.586c-.756-.756-2.075-.752-2.825-.003L7 12.583v4.43zM18.045 4.458l1.589 1.583l-1.597 1.582l-1.586-1.585l1.594-1.58zM9 13.417l6.03-5.973l1.586 1.586l-6.029 5.971L9 15.006v-1.589z" />
-                                    <path fill="white"
-                                        d="M5 21h14c1.103 0 2-.897 2-2v-8.668l-2 2V19H8.158c-.026 0-.053.01-.079.01c-.033 0-.066-.009-.1-.01H5V5h6.847l2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2z" />
-                                </svg>
-                            </a>
-                            <a href="#" class="button-hapus" onclick="showAlert()">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                                    <path fill="white"
-                                        d="M19 4h-3.5l-1-1h-5l-1 1H5v2h14M6 19a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7H6v12Z" />
-                                </svg>
-                            </a>
-                        </div>
+                        <div class="cell" data-title="Bulan">Linda Wijaya</div>
+                        <div class="cell" data-title="Tanggal">09/05/2023</div>
+                        <div class="cell" data-title="Skor Kesehatan"><b>50 MindPoint</b></div>
+                        <div class="cell" data-title="Nominal">Rp 30,000</div>
                     </div>
 
                     <div class="row">
                         <div class="cell" data-title="No">5</div>
-                        <div class="cell" data-title="Nama">Dr. Erick Pratama</div>
-                        <div class="cell" data-title="Status">Aktif</div>
-                        <div class="cell table-aksi" data-title="Aksi">
-                            <a href="" class="button-edit">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                                    <path fill="white"
-                                        d="m7 17.013l4.413-.015l9.632-9.54c.378-.378.586-.88.586-1.414s-.208-1.036-.586-1.414l-1.586-1.586c-.756-.756-2.075-.752-2.825-.003L7 12.583v4.43zM18.045 4.458l1.589 1.583l-1.597 1.582l-1.586-1.585l1.594-1.58zM9 13.417l6.03-5.973l1.586 1.586l-6.029 5.971L9 15.006v-1.589z" />
-                                    <path fill="white"
-                                        d="M5 21h14c1.103 0 2-.897 2-2v-8.668l-2 2V19H8.158c-.026 0-.053.01-.079.01c-.033 0-.066-.009-.1-.01H5V5h6.847l2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2z" />
-                                </svg>
-                            </a>
-                            <a href="#" class="button-hapus" onclick="showAlert()">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                                    <path fill="white"
-                                        d="M19 4h-3.5l-1-1h-5l-1 1H5v2h14M6 19a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7H6v12Z" />
-                                </svg>
-                            </a>
-                        </div>
+                        <div class="cell" data-title="Bulan">Hendri Gunawan</div>
+                        <div class="cell" data-title="Tanggal">07/18/2023</div>
+                        <div class="cell" data-title="Skor Kesehatan"><b>36 MindPoint</b></div>
+                        <div class="cell" data-title="Nominal">Rp 15,000</div>
                     </div>
 
                     <div class="row">
                         <div class="cell" data-title="No">6</div>
-                        <div class="cell" data-title="Nama">Dr. Fira Khairani</div>
-                        <div class="cell" data-title="Status">Aktif</div>
-                        <div class="cell table-aksi" data-title="Aksi">
-                            <a href="" class="button-edit">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                                    <path fill="white"
-                                        d="m7 17.013l4.413-.015l9.632-9.54c.378-.378.586-.88.586-1.414s-.208-1.036-.586-1.414l-1.586-1.586c-.756-.756-2.075-.752-2.825-.003L7 12.583v4.43zM18.045 4.458l1.589 1.583l-1.597 1.582l-1.586-1.585l1.594-1.58zM9 13.417l6.03-5.973l1.586 1.586l-6.029 5.971L9 15.006v-1.589z" />
-                                    <path fill="white"
-                                        d="M5 21h14c1.103 0 2-.897 2-2v-8.668l-2 2V19H8.158c-.026 0-.053.01-.079.01c-.033 0-.066-.009-.1-.01H5V5h6.847l2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2z" />
-                                </svg>
-                            </a>
-                            <a href="#" class="button-hapus" onclick="showAlert()">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                                    <path fill="white"
-                                        d="M19 4h-3.5l-1-1h-5l-1 1H5v2h14M6 19a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7H6v12Z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="cell" data-title="No">7</div>
-                        <div class="cell" data-title="Nama">Dr. Galih Permana</div>
-                        <div class="cell" data-title="Status">Aktif</div>
-                        <div class="cell table-aksi" data-title="Aksi">
-                            <a href="" class="button-edit">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                                    <path fill="white"
-                                        d="m7 17.013l4.413-.015l9.632-9.54c.378-.378.586-.88.586-1.414s-.208-1.036-.586-1.414l-1.586-1.586c-.756-.756-2.075-.752-2.825-.003L7 12.583v4.43zM18.045 4.458l1.589 1.583l-1.597 1.582l-1.586-1.585l1.594-1.58zM9 13.417l6.03-5.973l1.586 1.586l-6.029 5.971L9 15.006v-1.589z" />
-                                    <path fill="white"
-                                        d="M5 21h14c1.103 0 2-.897 2-2v-8.668l-2 2V19H8.158c-.026 0-.053.01-.079.01c-.033 0-.066-.009-.1-.01H5V5h6.847l2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2z" />
-                                </svg>
-                            </a>
-                            <a href="#" class="button-hapus" onclick="showAlert()">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                                    <path fill="white"
-                                        d="M19 4h-3.5l-1-1h-5l-1 1H5v2h14M6 19a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7H6v12Z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="cell" data-title="No">8</div>
-                        <div class="cell" data-title="Nama">Dr. Hanna Kusuma</div>
-                        <div class="cell" data-title="Status">Aktif</div>
-                        <div class="cell table-aksi" data-title="Aksi">
-                            <a href="" class="button-edit">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                                    <path fill="white"
-                                        d="m7 17.013l4.413-.015l9.632-9.54c.378-.378.586-.88.586-1.414s-.208-1.036-.586-1.414l-1.586-1.586c-.756-.756-2.075-.752-2.825-.003L7 12.583v4.43zM18.045 4.458l1.589 1.583l-1.597 1.582l-1.586-1.585l1.594-1.58zM9 13.417l6.03-5.973l1.586 1.586l-6.029 5.971L9 15.006v-1.589z" />
-                                    <path fill="white"
-                                        d="M5 21h14c1.103 0 2-.897 2-2v-8.668l-2 2V19H8.158c-.026 0-.053.01-.079.01c-.033 0-.066-.009-.1-.01H5V5h6.847l2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2z" />
-                                </svg>
-                            </a>
-                            <a href="#" class="button-hapus" onclick="showAlert()">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                                    <path fill="white"
-                                        d="M19 4h-3.5l-1-1h-5l-1 1H5v2h14M6 19a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7H6v12Z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="cell" data-title="No">9</div>
-                        <div class="cell" data-title="Nama">Dr. Iqbal Ramadhan</div>
-                        <div class="cell" data-title="Status">Aktif</div>
-                        <div class="cell table-aksi" data-title="Aksi">
-                            <a href="" class="button-edit">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                                    <path fill="white"
-                                        d="m7 17.013l4.413-.015l9.632-9.54c.378-.378.586-.88.586-1.414s-.208-1.036-.586-1.414l-1.586-1.586c-.756-.756-2.075-.752-2.825-.003L7 12.583v4.43zM18.045 4.458l1.589 1.583l-1.597 1.582l-1.586-1.585l1.594-1.58zM9 13.417l6.03-5.973l1.586 1.586l-6.029 5.971L9 15.006v-1.589z" />
-                                    <path fill="white"
-                                        d="M5 21h14c1.103 0 2-.897 2-2v-8.668l-2 2V19H8.158c-.026 0-.053.01-.079.01c-.033 0-.066-.009-.1-.01H5V5h6.847l2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2z" />
-                                </svg>
-                            </a>
-                            <a href="#" class="button-hapus" onclick="showAlert()">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                                    <path fill="white"
-                                        d="M19 4h-3.5l-1-1h-5l-1 1H5v2h14M6 19a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7H6v12Z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="cell" data-title="No">10</div>
-                        <div class="cell" data-title="Nama">Dr. Jihan Maulida</div>
-                        <div class="cell" data-title="Status">Aktif</div>
-                        <div class="cell table-aksi" data-title="Aksi">
-                            <a href="" class="button-edit">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                                    <path fill="white"
-                                        d="m7 17.013l4.413-.015l9.632-9.54c.378-.378.586-.88.586-1.414s-.208-1.036-.586-1.414l-1.586-1.586c-.756-.756-2.075-.752-2.825-.003L7 12.583v4.43zM18.045 4.458l1.589 1.583l-1.597 1.582l-1.586-1.585l1.594-1.58zM9 13.417l6.03-5.973l1.586 1.586l-6.029 5.971L9 15.006v-1.589z" />
-                                    <path fill="white"
-                                        d="M5 21h14c1.103 0 2-.897 2-2v-8.668l-2 2V19H8.158c-.026 0-.053.01-.079.01c-.033 0-.066-.009-.1-.01H5V5h6.847l2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2z" />
-                                </svg>
-                            </a>
-                            <a href="#" class="button-hapus" onclick="showAlert()">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                                    <path fill="white"
-                                        d="M19 4h-3.5l-1-1h-5l-1 1H5v2h14M6 19a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7H6v12Z" />
-                                </svg>
-                            </a>
-                        </div>
+                        <div class="cell" data-title="Bulan">Rina Setiawati</div>
+                        <div class="cell" data-title="Tanggal">11/10/2023</div>
+                        <div class="cell" data-title="Skor Kesehatan"><b>48 MindPoint</b></div>
+                        <div class="cell" data-title="Nominal">Rp 25,000</div>
                     </div>
 
                 </div>
+                <div class="download-button">
+                    <button onclick="showAlert()">Download</button>
+                </div>
+
             </div>
         </main>
     </div>

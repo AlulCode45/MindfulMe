@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelola Artikel | MindfulMe</title>
+    <link rel="stylesheet" href="../../../assets/css/dashboard.css">
+</head>
+
+<body>
+
+    <div class="preloader">
+        <div class="loading">
+            <img src="../../../assets/image/loading.gif" width="80">
+            <p>Harap Tunggu</p>
+        </div>
+    </div>
+
+    <div class="content">
+        <aside class="sidebar">
+            <div class="dashboard-profile">
+                <a href="./profile.html">
+                    <img src="../../../assets/image/user/Image-60.png" alt="">
+                </a>
+            </div>
+            <div class="sidebar-menu">
+                <a href="./index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="57.57" height="57.57" viewBox="0 0 24 24">
+                        <path fill="white" d="M10 20v-6h4v6h5v-8h3L12 3L2 12h3v8z" />
+                    </svg>
+                </a>
+                <a href="./forum.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="57.57" height="57.57" viewBox="0 0 640 512">
+                        <path fill="white"
+                            d="M96 224c35.3 0 64-28.7 64-64s-28.7-64-64-64s-64 28.7-64 64s28.7 64 64 64zm448 0c35.3 0 64-28.7 64-64s-28.7-64-64-64s-64 28.7-64 64s28.7 64 64 64zm32 32h-64c-17.6 0-33.5 7.1-45.1 18.6c40.3 22.1 68.9 62 75.1 109.4h66c17.7 0 32-14.3 32-32v-32c0-35.3-28.7-64-64-64zm-256 0c61.9 0 112-50.1 112-112S381.9 32 320 32S208 82.1 208 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C179.6 288 128 339.6 128 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zm-223.7-13.4C161.5 263.1 145.6 256 128 256H64c-35.3 0-64 28.7-64 64v32c0 17.7 14.3 32 32 32h65.9c6.3-47.4 34.9-87.3 75.2-109.4z" />
+                    </svg>
+                </a>
+                <a href="./consultation.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="57.57" height="57.57" viewBox="0 0 24 24">
+                        <path fill="white"
+                            d="M3 12c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h8c1.1 0 2 .9 2 2v5c0 1.1-.9 2-2 2H9v3l-3-3H3zm18 6c1.1 0 2-.9 2-2v-5c0-1.1-.9-2-2-2h-6v1c0 2.2-1.8 4-4 4v2c0 1.1.9 2 2 2h2v3l3-3h3z" />
+                    </svg>
+                </a>
+                <a href="./laporan-keuangan.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="57.57" height="57.57" viewBox="0 0 512 512">
+                        <path fill="white"
+                            d="M128 496H48V304h80Zm224 0h-80V208h80Zm112 0h-80V96h80Zm-224 0h-80V16h80Z" />
+                    </svg>
+                </a>
+                <a href="./kelola-artikel.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="57.57" height="57.57" viewBox="0 0 24 24">
+                        <path fill="white"
+                            d="M19.875 3H4.125C2.953 3 2 3.897 2 5v14c0 1.103.953 2 2.125 2h15.75C21.047 21 22 20.103 22 19V5c0-1.103-.953-2-2.125-2zm0 16H4.125c-.057 0-.096-.016-.113-.016c-.007 0-.011.002-.012.008L3.988 5.046c.007-.01.052-.046.137-.046h15.75c.079.001.122.028.125.008l.012 13.946c-.007.01-.052.046-.137.046z" />
+                        <path fill="white" d="M6 7h6v6H6zm7 8H6v2h12v-2h-4zm1-4h4v2h-4zm0-4h4v2h-4z" />
+                    </svg>
+                </a>
+            </div>
+            <a href="../../auth/login.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="57.57" height="57.57" viewBox="0 0 24 24" class="keluar">
+                    <path fill="white"
+                        d="M6 2h9a2 2 0 0 1 2 2v1a1 1 0 0 1-2 0V4H6v16h9v-1a1 1 0 0 1 2 0v1a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z" />
+                    <path fill="white"
+                        d="M16.795 16.295c.39.39 1.02.39 1.41 0l3.588-3.588a1 1 0 0 0 0-1.414l-3.588-3.588a.999.999 0 0 0-1.411 1.411L18.67 11H10a1 1 0 0 0 0 2h8.67l-1.876 1.884a.999.999 0 0 0 .001 1.411z" />
+                </svg>
+            </a>
+        </aside>
+        <nav>
+            <img src="../../../assets/image/icon.png" class="nav-icon" alt="">
+            <div class="profile">
+                <a href="./profile.html">
+                    <img src="../../../assets/image/user/Image-60.png" alt="">
+                </a>
+            </div>
+        </nav>
+
+        <main>
+            <div class="alert alert-success" id="alert">
+                <p>Artikel Dihapus</p><svg width="24px" height="24px" viewBox="0 0 0.72 0.72" id="check"
+                    data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color">
+                    <path id="primary"
+                        d="M0.3 0.54a0.03 0.03 0 0 1 -0.021 -0.009l-0.15 -0.15a0.03 0.03 0 0 1 0.043 -0.043l0.129 0.129 0.249 -0.249a0.03 0.03 0 1 1 0.043 0.043l-0.27 0.27A0.03 0.03 0 0 1 0.3 0.54Z"
+                        style="fill: rgb(255, 255, 255);" />
+                </svg>
+            </div>
+            <div class="alert alert-success" id="alert2">
+                <p>Sukses Menambahkan</p><svg width="24px" height="24px" viewBox="0 0 0.72 0.72" id="check"
+                    data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color">
+                    <path id="primary"
+                        d="M0.3 0.54a0.03 0.03 0 0 1 -0.021 -0.009l-0.15 -0.15a0.03 0.03 0 0 1 0.043 -0.043l0.129 0.129 0.249 -0.249a0.03 0.03 0 1 1 0.043 0.043l-0.27 0.27A0.03 0.03 0 0 1 0.3 0.54Z"
+                        style="fill: rgb(255, 255, 255);" />
+                </svg>
+            </div>
+            <div class="kelola-artikel">
+                <div class="kelola-artikel-header">
+                    <h1>Kelola Artikel</h1>
+                    <a href="./tambah-artikel.html">
+                        <button class="tambah-artikel">Tambah Artikel</button>
+                    </a>
+                </div>
+                <div class="table">
+                    <div class="row header blue">
+                        <div class="cell" data-title="No">No</div>
+                        <div class="cell" data-title="Judul">Judul</div>
+                        <div class="cell" data-title="Kategori">Kategori</div>
+                        <div class="cell" data-title="Penulis">Penulis</div>
+                        <div class="cell" data-title="Tanggal">Tanggal</div>
+                        <div class="cell" data-title="Visit">Visit</div>
+                        <div class="cell" data-title="Aksi">Aksi</div>
+                    </div>
+
+                    <div class="row">
+                        <div class="cell" data-title="No">1</div>
+                        <div class="cell" data-title="Judul"><b>Depresi Dalam Remaja: Tanda-tanda dan Solusi</b></div>
+                        <div class="cell" data-title="Kategori">Depresi</div>
+                        <div class="cell" data-title="Penulis">Muhammad Khoyron AF</div>
+                        <div class="cell" data-title="Status">17/10/2023</div>
+                        <div class="cell" data-title="Visit">243</div>
+                        <div class="cell table-aksi" data-title="Aksi">
+                            <select name="" id="aksi-artikel">
+                                <option value="">Aksi</option>
+                                <option value="view">Lihat</option>
+                                <option value="edit">Edit</option>
+                                <option value="delete">Hapus</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="cell" data-title="No">2</div>
+                        <div class="cell" data-title="Judul"><b>Kesehatan Mental dan Pandemi: Tantangan Terbesar
+                                Kita</b></div>
+                        <div class="cell" data-title="Kategori">Depresi</div>
+                        <div class="cell" data-title="Penulis">Muhammad Khoyron AF</div>
+                        <div class="cell" data-title="Status">17/10/2023</div>
+                        <div class="cell" data-title="Visit">243</div>
+                        <div class="cell table-aksi" data-title="Aksi">
+                            <select name="" id="aksi-artikel">
+                                <option value="">Aksi</option>
+                                <option value="view">Lihat</option>
+                                <option value="edit">Edit</option>
+                                <option value="delete">Hapus</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="bottom-navigation">
+        <a href="./forum.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="43.37" height="43.37" viewBox="0 0 640 512">
+                <path fill="white"
+                    d="M96 224c35.3 0 64-28.7 64-64s-28.7-64-64-64s-64 28.7-64 64s28.7 64 64 64zm448 0c35.3 0 64-28.7 64-64s-28.7-64-64-64s-64 28.7-64 64s28.7 64 64 64zm32 32h-64c-17.6 0-33.5 7.1-45.1 18.6c40.3 22.1 68.9 62 75.1 109.4h66c17.7 0 32-14.3 32-32v-32c0-35.3-28.7-64-64-64zm-256 0c61.9 0 112-50.1 112-112S381.9 32 320 32S208 82.1 208 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C179.6 288 128 339.6 128 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zm-223.7-13.4C161.5 263.1 145.6 256 128 256H64c-35.3 0-64 28.7-64 64v32c0 17.7 14.3 32 32 32h65.9c6.3-47.4 34.9-87.3 75.2-109.4z" />
+            </svg>
+        </a>
+        <a href="./consultation.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="57.57" height="57.57" viewBox="0 0 24 24">
+                <path fill="white"
+                    d="M3 12c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h8c1.1 0 2 .9 2 2v5c0 1.1-.9 2-2 2H9v3l-3-3H3zm18 6c1.1 0 2-.9 2-2v-5c0-1.1-.9-2-2-2h-6v1c0 2.2-1.8 4-4 4v2c0 1.1.9 2 2 2h2v3l3-3h3z" />
+            </svg>
+        </a>
+        <a href="./index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="43.37" height="43.37" viewBox="0 0 24 24">
+                <path fill="white" d="M10 20v-6h4v6h5v-8h3L12 3L2 12h3v8z" />
+            </svg>
+        </a>
+        <a href="./laporan-keuangan.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="43.37" height="43.37" viewBox="0 0 512 512">
+                <path fill="white" d="M128 496H48V304h80Zm224 0h-80V208h80Zm112 0h-80V96h80Zm-224 0h-80V16h80Z" />
+            </svg>
+        </a>
+        <a href="./kelola-artikel.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="43.37" height="43.37" viewBox="0 0 24 24">
+                <path fill="white"
+                    d="M19.875 3H4.125C2.953 3 2 3.897 2 5v14c0 1.103.953 2 2.125 2h15.75C21.047 21 22 20.103 22 19V5c0-1.103-.953-2-2.125-2zm0 16H4.125c-.057 0-.096-.016-.113-.016c-.007 0-.011.002-.012.008L3.988 5.046c.007-.01.052-.046.137-.046h15.75c.079.001.122.028.125.008l.012 13.946c-.007.01-.052.046-.137.046z" />
+                <path fill="white" d="M6 7h6v6H6zm7 8H6v2h12v-2h-4zm1-4h4v2h-4zm0-4h4v2h-4z" />
+            </svg>
+        </a>
+    </div>
+
+    <script>
+        aksiArtikel = document.querySelectorAll('#aksi-artikel');
+        for (let i = 0; i < aksiArtikel.length; i++) {
+            aksiArtikel[i].addEventListener('change', (e) => {
+                switch (e.target.value) {
+                    case "view":
+                        window.location.href = './view-artikel.html'
+                        break;
+                    case "edit":
+                        window.location.href = './edit-artikel.html'
+                        break;
+                    case "delete":
+                        showAlert()
+                        break
+                    default:
+                        break;
+                }
+            })
+        }
+    </script>
+    <script src="../../../assets/js/alert.js"></script>
+    <script src="../../../assets/js/main.js"></script>
+</body>
+
+
+</html>
