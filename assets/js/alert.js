@@ -1,5 +1,5 @@
-function showAlert() {
-    const alertElement = document.getElementById('alert');
+function showAlert(elementId = 'alert') {
+    const alertElement = document.getElementById(elementId);
     alertElement.style.display = "flex"
     let rightValue = -250;
 
@@ -25,4 +25,5 @@ function showAlert() {
             }, 3000);
         }
     }, 10);
+
 }

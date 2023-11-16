@@ -1453,6 +1453,21 @@ textarea {
     padding: 30px;
 }
 
+.hasil-tes-kesehatan button {
+    background-color: #1C7892;
+    border-radius: 10px;
+    padding: 15px;
+    color: white;
+    width: 150px;
+
+    color: #FFF;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
 .slider {
     position: relative;
     height: 230px;
@@ -1531,7 +1546,8 @@ button .fas {
     background: #272727;
 }
 
-.kelola-psikolog {
+.kelola-psikolog,
+.kelola-artikel {
     background-color: white;
     padding: 30px;
     margin-top: 30px;
@@ -1541,6 +1557,13 @@ button .fas {
     display: flex !important;
     align-items: center;
     gap: 10px;
+}
+
+.table-aksi select {
+    border: 1px solid var(--primary-color);
+    padding: 5px;
+    outline: none;
+    border-radius: 4px;
 }
 
 .button-edit {
@@ -1570,17 +1593,24 @@ button .fas {
 
 }
 
-.kelola-psikolog-header {
+.form-group {
+    margin-top: 10px;
+}
+
+.kelola-psikolog-header,
+.kelola-artikel-header {
     display: flex;
     justify-content: space-between;
 }
 
-.kelola-psikolog-header h1 {
+.kelola-psikolog-header h1,
+.kelola-artikel-header h1 {
     font-size: 25px;
     margin-bottom: 10px;
 }
 
-.kelola-psikolog-header button {
+.kelola-psikolog-header button,
+.kelola-artikel-header button {
     background-color: #1C7892;
     color: white;
     padding: 10px;
@@ -1591,6 +1621,34 @@ button .fas {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.kelola-artikel .form-group label {
+    display: block;
+}
+
+.kelola-artikel .form-group input,
+.kelola-artikel .form-group input::-webkit-input-placeholder,
+.kelola-artikel .form-group textarea ::-webkit-input-placeholder {
+    height: 50px;
+    font-size: 15px;
+}
+
+.kelola-artikel .form-group input,
+.kelola-artikel .form-group textarea,
+.kelola-artikel .form-group select {
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    outline: none;
+    border: none;
+    background-color: #F1F1F1;
+    font-size: 15px;
+}
+
+.kelola-artikel {
+    margin-bottom: 100px;
 }
 
 @media (min-width:768px) {
@@ -1613,6 +1671,10 @@ button .fas {
     }
 
     .chat-forum {
+        margin-bottom: 50px;
+    }
+
+    .kelola-artikel {
         margin-bottom: 50px;
     }
 
@@ -1756,6 +1818,9 @@ button .fas {
 }
 
 @media (min-width: 1024px) {
+    .kelola-artikel {
+        margin-bottom: 0px;
+    }
 
     .slider,
     .slide {
