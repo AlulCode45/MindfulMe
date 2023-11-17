@@ -20,7 +20,7 @@
         <aside class="sidebar">
             <div class="dashboard-profile">
                 <a href="./profile.html">
-                    <img src="../../../assets/image/user/Image-60.png" alt="">
+                    <img src="../../../assets/image/user/psikolog-P1.png" alt="">
                 </a>
             </div>
             <div class="sidebar-menu">
@@ -68,7 +68,7 @@
             <img src="../../../assets/image/icon.png" class="nav-icon" alt="">
             <div class="profile">
                 <a href="./profile.html">
-                    <img src="../../../assets/image/user/Image-60.png" alt="">
+                    <img src="../../../assets/image/user/psikolog-P1.png" alt="">
                 </a>
             </div>
         </nav>
@@ -125,11 +125,11 @@
                         </div>
                         <div id="biaya-admin">
                             <p>Biaya Admin 2%</p>
-                            <span>Rp -</span>
+                            <span>Rp 5,000</span>
                         </div>
                         <div id="total-harga">
                             <p>Total Harga</p>
-                            <span>Rp -</span>
+                            <span>Rp <span id="total-uang">-</span></span>
                         </div>
                     </div>
                 </div>
@@ -177,6 +177,7 @@
     <script>
         jumlahPoint = document.getElementById('jumlahPoint')
         jumlahPointPersen = document.querySelectorAll('.mindpoint-persen span')
+        totalUang = document.getElementById('total-uang')
 
         for (let i = 0; i < jumlahPointPersen.length; i++) {
             jumlahPointPersen[i].addEventListener('click', (e) => {
@@ -188,20 +189,31 @@
                 jumlahPointPersen[3].classList.remove('active')
 
                 jumlahPointPersen[i].classList.add('active')
+
+                totalUang.innerHTML = formatRupiah((jumlahPoint.value * 3500) - 5000)
             })
         }
 
+        function formatRupiah(angka) {
+            var rupiah = '';
+            var angkarev = angka.toString().split('').reverse().join('');
+            for (var i = 0; i < angkarev.length; i++) if (i % 3 == 0) rupiah += angkarev.substr(i, 3) + '.';
+            return rupiah.split('', rupiah.length - 1).reverse().join('');
+        }
+
         jumlahPoint.addEventListener('keyup', (e) => {
-            if (e.target.value != "") {
-                if (e.target.value <= 60) {
-                    e.target.value = 60;
-                }
+
+            if (e.target.value == '') {
+                totalUang.innerHTML = ''
+            } else {
+                totalUang.innerHTML = formatRupiah((e.target.value * 3500) - 5000)
             }
 
             jumlahPointPersen[0].classList.remove('active')
             jumlahPointPersen[1].classList.remove('active')
             jumlahPointPersen[2].classList.remove('active')
             jumlahPointPersen[3].classList.remove('active')
+
         })
 
     </script>

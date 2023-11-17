@@ -1777,6 +1777,10 @@ button .fas {
     justify-content: space-between;
 }
 
+.rounded-full {
+    border-radius: 100%;
+}
+
 @media (min-width:768px) {
 
     .kelola-psikolog,
