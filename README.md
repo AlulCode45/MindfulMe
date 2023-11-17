@@ -1,4 +1,4 @@
-# MindfulMe 
+# MindfulMe - Kuat Iman Tim ( SMKN 4 Bojonegoro )
 Platform aplikasi konseling nomor #1 di Indonesia
 
 - Product Manager : Adn Alkhoir
