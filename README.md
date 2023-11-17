@@ -1,9 +1,9 @@
 # MindfulMe 
 Platform aplikasi konseling nomor #1 di Indonesia
 
-Product Manager : Adn Alkhoir
-Developer : Muhammad Khoyron Ahlaqul Firdaus
-Designer : Littozuma Feba Luxgowo
+- Product Manager : Adn Alkhoir
+- Developer : Muhammad Khoyron Ahlaqul Firdaus
+- Designer : Littozuma Feba Luxgowo
 
 
 ## Detail Login Aplikasi 
