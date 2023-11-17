@@ -136,6 +136,7 @@ li {
     font-size: 15px;
     font-weight: 500;
     background-color: var(--primary-color);
+    cursor: pointer;
 }
 
 .button-telusuri {
@@ -147,6 +148,7 @@ li {
     border-width: 1px;
     font-size: 15px;
     font-weight: 600;
+    cursor: pointer;
 
 }
 
