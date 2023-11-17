@@ -19,6 +19,7 @@ body {
     margin: 0px;
     font-family: 'Montserrat', sans-serif;
     background-color: #FFF;
+    overflow-x: hidden;
 }
 
 .login-page {
@@ -29,7 +30,8 @@ body {
     justify-content: center;
 }
 
-.form-login {
+.form-login,
+.form-register {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -61,7 +63,8 @@ label {
 }
 
 input,
-select {
+select,
+textarea {
     padding-left: 10px;
     padding-right: 10px;
     height: 50px;
@@ -70,6 +73,10 @@ select {
     width: 100%;
     font-size: 15px;
     border: 1px solid var(--primary-color);
+}
+
+textarea {
+    padding: 10px;
 }
 
 select option {
@@ -89,7 +96,6 @@ select option:checked {
     color: white;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-top: 30px;
     font-weight: 900;
     font-size: 17px;
     cursor: pointer;
@@ -111,6 +117,31 @@ select option:checked {
     border-radius: 5px;
 }
 
+.punya-akun {
+    margin-top: 15px;
+}
+
+.punya-akun a {
+    color: var(--primary-color);
+    text-decoration: none;
+
+}
+
+.form-register {
+    overflow-x: none;
+    overflow-y: auto;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.form-register h1 {
+    margin-top: 30px;
+}
+
+.form-register .button-login {
+    margin-bottom: 30px;
+}
+
 @media (min-width: 768px) {
 
     .login-photo {
@@ -125,4 +156,5 @@ select option:checked {
     .form-login {
         width: 60%;
     }
+
 }

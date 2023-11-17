@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Masuk | MindfulMe</title>
+    <title>Daftar | MindfulMe</title>
     <link rel="stylesheet" href="../../assets/css/auth.css">
 </head>
 
@@ -16,18 +16,37 @@
                 d="M205.66 194.34a8 8 0 0 1-11.32 11.32L128 139.31l-66.34 66.35a8 8 0 0 1-11.32-11.32L116.69 128L50.34 61.66a8 8 0 0 1 11.32-11.32L128 116.69l66.34-66.35a8 8 0 0 1 11.32 11.32L139.31 128Z" />
         </svg>
     </div>
-    <div class="login-page">
+    <div class="login-page register-page">
         <div class="login-photo">
         </div>
-        <div class="form-login">
+        <div class="form-register">
             <form action="#" method="post">
-                <h1>Selamat datang di <b>MindfulMe</b>
+                <h1>Pendaftaran Layanan <b>MindfulMe</b>
                 </h1>
                 <p>
                     Mindfulme Adalah aplikasi yang ditujukan untuk melakukan konseling dengan psikolog profesional.
                     Silahkan masukan
                     informasi akun untuk melanjutkan.
                 </p>
+                <div class="form-group">
+                    <label for="">Nama Lengkap</label>
+                    <input type="text" class="input" id="nama_lengkap" placeholder="Masukan Nama">
+                </div>
+                <div class="form-group">
+                    <label for="jenis_kelamin">Jenis Kelamin</label>
+                    <select class="input" id="jenis_kelamin">
+                        <option value="laki-laki">Laki-laki</option>
+                        <option value="perempuan">Perempuan</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="Data_Diri">Data Diri</label>
+                    <textarea class="input" rows="10" id="Data_Diri" placeholder="Masukan Data Diri"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="alamat">Alamat</label>
+                    <textarea class="input" rows="10" id="alamat" placeholder="Masukan Alamat"></textarea>
+                </div>
                 <div class="form-group">
                     <label for="">Email</label>
                     <input type="email" class="input" id="email" placeholder="Masukan Email">
@@ -36,26 +55,15 @@
                     <label for="">Password</label>
                     <input type="password" class="input" id="password" placeholder="Masukan Password">
                 </div>
-                <br>
-                <p class="punya-akun">Belum memiliki akun? <a href="register.html"><b>Daftar</b></a></p>
-                <button type="button" class="button-login" onclick="login()">Masuk</button>
+
+                <p class="punya-akun">Sudah memiliki akun? <a href="login.html"><b>Login</b></a></p>
+                <button type="button" class="button-login" onclick="login()">Daftar</button>
             </form>
         </div>
     </div>
     <script>
         function login() {
-            email = document.getElementById('email').value;
-            password = document.getElementById('password').value;
-
-            if (email == "user@gmail.com" && password == "user") {
-                window.location.href = "../dashboard/pengguna";
-            } else if (email == "admin@gmail.com" && password == "admin") {
-                window.location.href = "../dashboard/admin";
-            } else if (email == "psikolog@gmail.com" && password == "psikolog") {
-                window.location.href = "../dashboard/psikolog";
-            } else {
-                showAlert()
-            }
+            window.location.href = "../dashboard/pengguna";
         }
 
     </script>
