@@ -1786,6 +1786,30 @@ button .fas {
     border-radius: 100%;
 }
 
+.edit-psikolog .form-group label {
+    display: block;
+}
+
+.edit-psikolog .form-group input,
+.edit-psikolog .form-group input::-webkit-input-placeholder,
+.edit-psikolog .form-group textarea ::-webkit-input-placeholder {
+    height: 50px;
+    font-size: 15px;
+}
+
+.edit-psikolog .form-group input,
+.edit-psikolog .form-group textarea,
+.edit-psikolog .form-group select {
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    outline: none;
+    border: none;
+    background-color: #F1F1F1;
+    font-size: 15px;
+}
+
 @media (min-width:768px) {
 
     .kelola-psikolog,

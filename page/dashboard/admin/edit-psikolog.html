@@ -4,17 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Profile| MindfulMe</title>
+    <title>Kelola Psikolog | MindfulMe</title>
     <link rel="stylesheet" href="../../../assets/css/dashboard.css">
 </head>
 
 <body>
+
     <div class="preloader">
         <div class="loading">
             <img src="../../../assets/image/loading.gif" width="80">
             <p>Harap Tunggu</p>
         </div>
     </div>
+
     <div class="content">
         <aside class="sidebar">
             <div class="dashboard-profile">
@@ -76,87 +78,64 @@
         </nav>
 
         <main>
-            <div class="alert alert-success" id="alert">
-                <p>Edit profile Berhasil</p><svg width="24px" height="24px" viewBox="0 0 0.72 0.72" id="check"
+            <div class="alert alert-success" id="alert2">
+                <p>Data Disimpan</p><svg width="24px" height="24px" viewBox="0 0 0.72 0.72" id="check"
                     data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color">
                     <path id="primary"
                         d="M0.3 0.54a0.03 0.03 0 0 1 -0.021 -0.009l-0.15 -0.15a0.03 0.03 0 0 1 0.043 -0.043l0.129 0.129 0.249 -0.249a0.03 0.03 0 1 1 0.043 0.043l-0.27 0.27A0.03 0.03 0 0 1 0.3 0.54Z"
                         style="fill: rgb(255, 255, 255);" />
                 </svg>
             </div>
-
-            <div class="profile-page">
-                <div class="profile-user">
-                    <a href="#">
-                        <img src="../../../assets/image/user/Image-60.png" alt="" id="profile-img">
-                        <div class="edit-photo" id="edit-photo">
-                            <svg version="1.1" id="Uploaded to svgrepo.com" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="30px"
-                                viewBox="0 0 1.2 1.2" xml:space="preserve">
-                                <style type="text/css">
-                                    .blueprint_een {
-                                        fill: #fff;
-                                    }
-
-                                    .st0 {
-                                        fill: #0B1719;
-                                    }
-                                </style>
-                                <path class="blueprint_een"
-                                    d="M1.173 0.273 0.927 0.027a0.037 0.037 0 0 0 -0.053 0L0.12 0.78a0.038 0.038 0 0 0 -0.01 0.017L0.017 1.137a0.037 0.037 0 0 0 0.046 0.046l0.34 -0.093c0.006 -0.002 0.012 -0.005 0.017 -0.01L1.173 0.327a0.037 0.037 0 0 0 0 -0.053zm-0.512 0.163 -0.225 0.225c-0.042 0.042 -0.083 0.028 -0.106 0.013l0.345 -0.345c0.035 0.053 -0.008 0.101 -0.014 0.106zM0.168 0.869l0.163 0.163L0.107 1.093l0.061 -0.224zm0.206 0.151 -0.001 0 -0.193 -0.193 0 -0.001 0.124 -0.124c0.019 0.013 0.045 0.025 0.074 0.025 0.027 0 0.057 -0.01 0.086 -0.039l0.225 -0.225c0.028 -0.028 0.063 -0.095 0.014 -0.16l0.05 -0.05 0.194 0.194L0.374 1.02zm0.599 -0.599L0.779 0.227 0.9 0.106 1.094 0.3l-0.121 0.121z" />
-                            </svg>
-                        </div>
-                    </a>
-                    <div class="profile-user-content">
-                        <h1>Syamsul Anam S,Kom</h1>
-                        <p>
-                            Seorang tech enthusiast yang suka dengan dunia programming dan juga suka dengan dunia
-                            desain.
-                        </p>
+            <div class="kelola-psikolog">
+                <div class="kelola-psikolog-header">
+                    <h1>Edit Psikolog</h1>
+                </div>
+                <form action="#" class="edit-psikolog">
+                    <div class="form-group">
+                        <label for="">Nama Lengkap</label>
+                        <input type="text" placeholder="Masukkan Nama Lengkap" value="Dr. Amanda Setiawan">
                     </div>
-                    <a href="#">
-                        <button class="edit-profile" onclick="showAlert()">
-                            Simpan
-                        </button>
-                    </a>
-                </div>
-                <div class="form-edit-pengguna">
-                    <h4>Edit Informasi Pengguna</h4>
-                    <form action="">
-                        <div class="form-group">
-                            <label for="">Nama</label>
-                            <input type="text" placeholder="Nama pengguna" value="Syamsul Anam S,Kom">
-                        </div>
-                        <div class="form-group">
-                            <label for="">Tentang Diri</label>
-                            <textarea type="text" placeholder="Tentang dirimu"
-                                rows="5">Saya adalah seseorang yang hidup dengan kebutuhan khusus terkait mental sering depresi dan cemas.</textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="">Email</label>
-                            <input type="text" placeholder="Masukan Email" value="okey-syam@gmail.com
-
-">
-                        </div>
-                        <div class="form-group">
-                            <label for="">Password</label>
-                            <input type="password" placeholder="Masukan Password" value="12345">
-                        </div>
-                        <div class="form-group">
-                            <label for="">No telp</label>
-                            <input type="text" placeholder="No Telp pengguna" value="+62812356789">
-                        </div>
-                        <div class="form-group">
-                            <label for="">Alamat</label>
-                            <textarea type="text" placeholder="Masukan alamat lengkap"
-                                rows="5">Jl. Mawar Indah No. 123 Kelurahan Bunga Sejahtera Kota Harapan Mulia Provinsi Kehidupan Bahagia</textarea>
-                        </div>
-                    </form>
-                </div>
+                    <div class="form-group">
+                        <label for="">Email</label>
+                        <input type="email" placeholder="Masukkan Email" value="monda-manda@gmail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Nomor Telepon</label>
+                        <input type="tel" placeholder="Masukkan Nomor Telepon" value="+62812356789">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Deskripsi Psikolog</label>
+                        <textarea type="text"
+                            placeholder="Masukkan Deskripsi Psikolog">Dokter psikolog yang siap membantu Anda mengatasi masalah kesehatan mental dengan dukungan dan empati.</textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Alamat</label>
+                        <textarea type="text"
+                            placeholder="Masukkan Alamat">Jl. Mawar Indah No. 123 Kelurahan Bunga Sejahtera Kota Harapan Mulia Provinsi Kehidupan Bahagia</textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Jenis Kelamin</label>
+                        <select name="" id="mySelect" class="pilih-kategori">
+                            <option value="">Pilih Jenis Kelamin</option>
+                            <option value="Laki-laki">Laki-laki</option>
+                            <option value="Perempuan" selected>Perempuan</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Spesialis</label>
+                        <input type="text" placeholder="Masukkan Spesialis" value="Psikologis">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Foto</label>
+                        <input type="file">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="simpan-topik" onclick="showAlert('alert2')">Simpan</button>
+                    </div>
+                </form>
             </div>
         </main>
     </div>
-
     <div class="bottom-navigation">
         <a href="forum.html">
             <svg xmlns="http://www.w3.org/2000/svg" width="43.37" height="43.37" viewBox="0 0 640 512">
@@ -195,5 +174,6 @@
     <script src="../../../assets/js/alert.js"></script>
     <script src="../../../assets/js/main.js"></script>
 </body>
+
 
 </html>
