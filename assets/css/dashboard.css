@@ -258,6 +258,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .psikolog-akun-info span {
@@ -297,6 +298,10 @@ nav {
     display: flex;
     align-items: center;
     gap: 30px;
+}
+
+.profile-psikolog svg {
+    margin-left: auto;
 }
 
 .profile-psikolog img {
