@@ -30,3 +30,8 @@ Link Dashboard : http://localhost/page/dashboard/pengguna/
 http://dev-rpl.smkn4bojonegoro.sch.id/
 ```
 
+## Simple Video Demonstrasi 
+```
+https://youtu.be/IC1P1CPzzGw
+```
+
